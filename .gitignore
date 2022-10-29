@@ -1,0 +1,11 @@
+## IDEs
+/.idea
+/.vscode
+
+## Auth
+/creds.json
+
+## Temp dirs & trash
+/temp
+/tmp
+.DS_Store

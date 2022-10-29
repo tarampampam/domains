@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>1bt.uk - A free identity for developers on the web</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="webmanifest.json">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+  <style>
+    :root {
+      --color-bg-primary: #fff;
+      --color-bg-secondary: #eef6fa;
+      --color-bg-inverted: #222526;
+      --color-text-primary: #151515;
+      --color-text-secondary: #0d7aa1;
+      --color-text-inverted: #fff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg-primary: #222526;
+        --color-bg-secondary: #292e2f;
+        --color-bg-inverted: #fff;
+        --color-text-primary: #fff;
+        --color-text-secondary: #69d4e7;
+        --color-text-inverted: #222526;
+      }
+    }
+
+    body, html {
+      background-color: var(--color-bg-primary);
+      color: var(--color-text-primary);
+      font-family: Roboto, Helvetica, sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      box-sizing: border-box;
+      max-width: 45%;
+    }
+
+    a {
+      text-decoration: underline;
+      color: var(--color-text-secondary)
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.2em;
+      margin-bottom: .3em;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .domain-demo {
+      padding: 1em 0;
+    }
+
+    p {
+      line-height: 1.65;
+    }
+
+    code {
+      color: var(--color-text-inverted);
+      background-color: var(--color-bg-inverted);
+      padding: .15em .25em;
+      border-radius: .2em;
+    }
+
+    .credits {
+      text-align: center;
+      font-size: .85em;
+    }
+
+    @media (max-width: 1024px) {
+      .content {
+        max-width: 85%;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="content">
+    <h1>1bt.uk Subdomain Free</h1>
+    <h3>A free identity for developers on the web</h3>
+    <h3 class="domain-demo"><span class="typed"></span>.1bt.uk</h3>
+    <p>
+      Are you a developer exploring an awesome name for your personal website and projects? You came to the right place!
+    </p>
+    <p>
+      1bt.uk is a free identity for developers on the web. This service offers a handy subdomain service for you to
+      have a subdomain like <code>foo.1bt.uk</code> or <code>bar.1bt.uk</code> for use on your static sites via
+      <strong>CNAME</strong>, <strong>A</strong>, or <strong>AAAA</strong> DNS record. Fork, add subdomain and send a <a
+      href="https://github.com/tarampampam/free-domains/edit/master/dns-records.json" target="_parent">Pull
+      Request</a>. We will make it work!
+    </p>
+    <p class="credits">
+      A project by <a href="https://github.com/tarampampam">@tarampampam</a>
+    </p>
+  </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  new Typed('.typed', {
+    strings: ['my-project', 'home-router', 'smart-device', 'personal-blog', 'awesome-library', 'anything'],
+    typeSpeed: 140,
+    showCursor: false
+  })
+</script>
+</body>
+</html>
