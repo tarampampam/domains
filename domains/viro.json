@@ -1,0 +1,17 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "My personal project",
+  "domain": "is-an.app", // or "1bt.uk"
+  "subdomain": "viro",
+  "owner": {
+    "repo": "https://github.com/abdullahmohamedali/memory-game",
+  },
+  "record": {
+    "CNAME": "user.abdullahmohamedali.io.",
+    //"TXT": ["..."],
+    //"A": ["127.0.0.1"],
+    //"AAAA": ["::1"],
+    //"NS": ["..."],
+  },
+  "proxy": false // disable CF proxy
+}
