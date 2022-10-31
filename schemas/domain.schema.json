@@ -14,7 +14,8 @@
     "domain": {
       "type": "string",
       "enum": [
-        "1bt.uk"
+        "1bt.uk",
+        "is-an.app"
       ]
     },
     "subdomain": {
@@ -343,6 +344,13 @@
           "type": "string",
           "minLength": 1,
           "pattern": "^[a-z0-9_./-]*\\.$"
+        },
+        "NS": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9._-]{3,}$"
+          }
         }
       },
       "anyOf": [
@@ -364,6 +372,11 @@
         {
           "required": [
             "CNAME"
+          ]
+        },
+        {
+          "required": [
+            "NS"
           ]
         }
       ]

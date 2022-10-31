@@ -1,7 +1,7 @@
 {
   "$schema": "../schemas/domain.schema.json",
   "description": "Root domain",
-  "domain": "1bt.uk",
+  "domain": "is-an.app",
   "subdomain": "@",
   "owner": {
     "repo": "https://github.com/tarampampam/free-domains"

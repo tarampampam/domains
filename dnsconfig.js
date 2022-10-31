@@ -17,7 +17,7 @@ var proxy = { // https://stackexchange.github.io/dnscontrol/providers/cloudflare
  *    domain: string,
  *    subdomain: string,
  *    owner?: {repo?: string, email?: string},
- *    record: {TXT?: string[], A?: string[], AAAA?: string[], CNAME?: string},
+ *    record: {TXT?: string[], A?: string[], AAAA?: string[], CNAME?: string, NS?: string[]},
  *    proxy?: boolean
  *  }}[]}
  */
@@ -80,6 +80,14 @@ for (var idx in domains) {
     for (var aaaa in domainData.record.AAAA) {
       commit[domainData.domain].push(
         AAAA(domainData.subdomain, domainData.record.AAAA[aaaa], proxyState) // https://stackexchange.github.io/dnscontrol/js#AAAA
+      )
+    }
+  }
+
+  if (domainData.record.NS) {
+    for (var ns in domainData.record.NS) {
+      commit[domainData.domain].push(
+        NS(domainData.subdomain, domainData.record.NS[ns]) // https://stackexchange.github.io/dnscontrol/js#NS
       )
     }
   }

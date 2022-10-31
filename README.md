@@ -12,12 +12,14 @@
 
 Free subdomains for personal sites, open-source projects, and more. Here is a list of supported domain names:
 
-|         Domain name         |                Features                 |
-|:---------------------------:|:---------------------------------------:|
-| ⚡ [1bt.uk](https://1bt.uk/) | ![cf][badge-cf] ![dnssec][badge-dnssec] |
+|              Domain name              |                         Features                          |
+|:-------------------------------------:|:---------------------------------------------------------:|
+| ⚡ [`*.is-an.app`](https://is-an.app/) | ![cf][badge-cf] ![dnssec][badge-dnssec] ![ssl][badge-ssl] |
+|             ⚡ `*.1bt.uk`              |          ![cf][badge-cf] ![dnssec][badge-dnssec]          |
 
 [badge-cf]:https://shields.io/badge/%20-cloudflare-blue?logo=cloudflare&style=plastic?cacheSeconds=3600
 [badge-dnssec]:https://shields.io/badge/%20-DNSSEC-blue?logo=moleculer&logoColor=white&style=plastic?cacheSeconds=3600
+[badge-ssl]:https://shields.io/badge/SSL-Required-blue?style=plastic?cacheSeconds=3600
 
 # How to get one?
 
@@ -29,7 +31,7 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
 {
   "$schema": "../schemas/domain.schema.json",
   "description": "My personal project",
-  "domain": "1bt.uk",
+  "domain": "is-an.app", // or "1bt.uk"
   "subdomain": "your-domain-name",
   "owner": {
     "repo": "https://github.com/user/repo",
@@ -40,12 +42,13 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
     //"TXT": ["..."],
     //"A": ["127.0.0.1"],
     //"AAAA": ["::1"],
+    //"NS": ["..."],
   },
   "proxy": false // disable CF proxy
 }
 ```
 
-4. Your pull request will be reviewed and merged. _Make sure to keep an eye on it incase we need you to make any changes!_
+4. Your pull request will be reviewed and merged. _Make sure to keep an eye on it in case we need you to make any changes!_
 5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(usually, it takes 5..15 minutes)_
 6. Enjoy your new domain!
 
