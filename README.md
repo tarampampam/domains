@@ -23,7 +23,7 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
 
 # How to get one?
 
-1. [Fork](https://github.com/tarampampam/free-domains/fork) this repository
+1. Star and [fork](https://github.com/tarampampam/free-domains/fork) this repository
 2. Add a new file called `your-domain-name.json` in the `./domains` folder to register `your-domain-name` subdomain
 3. Edit it:
 
