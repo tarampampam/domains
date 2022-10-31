@@ -3,139 +3,162 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>is-an.app - A free identity for developers on the web</title>
+  <title>A free subdomain for developers on the web</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.bunny.net">
-  <link href="https://fonts.bunny.net/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=source-sans-pro:400,700" rel="stylesheet" />
 
   <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="webmanifest.json">
+  <!-- <link rel="manifest" href="webmanifest.json">-->
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
 
   <style>
     :root {
       --color-bg-primary: #fff;
-      --color-bg-secondary: #eef6fa;
-      --color-bg-inverted: #222526;
+      --color-bg-secondary: #00a6d5;
+      --color-bg-inverted: #151515;
       --color-text-primary: #151515;
-      --color-text-secondary: #0d7aa1;
       --color-text-inverted: #fff;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --color-bg-primary: #222526;
-        --color-bg-secondary: #292e2f;
+        --color-bg-primary: #2f2f2f;
+        --color-bg-secondary: #3bc1e1;
         --color-bg-inverted: #fff;
         --color-text-primary: #fff;
-        --color-text-secondary: #69d4e7;
-        --color-text-inverted: #222526;
+        --color-text-inverted: #2f2f2f;
       }
     }
 
     body, html {
       background-color: var(--color-bg-primary);
       color: var(--color-text-primary);
-      font-family: Roboto, Helvetica, sans-serif;
+      font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
       font-size: 16px;
       margin: 0;
       padding: 0;
       height: 100vh;
     }
 
-    main {
-      width: 100%;
-      height: 100%;
+    body {
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .content {
-      box-sizing: border-box;
-      max-width: 45%;
+    main {
+      width: 800px;
     }
 
-    a {
-      text-decoration: underline;
-      color: var(--color-text-secondary)
+    header {
+      margin-bottom: 2em;
     }
 
-    h1, h2, h3 {
-      text-align: center;
-    }
-
-    h1 {
+    .url-example {
+      position: relative;
+      background-color: var(--color-bg-secondary);
+      color: var(--color-text-inverted);
+      padding: 10px 20px;
       font-weight: 700;
-      font-size: 2.2em;
-      margin-bottom: .3em;
+      font-size: 3em;
+      z-index: 1;
     }
 
-    h3 {
-      margin-top: 0;
+    .url-example:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      width: 1.65em;
+      height: 1.65em;
+      right: -0.825em;
+      transform: scale(0.3, 0.707) rotate(45deg);
+      z-index: -1;
+      background-color: var(--color-bg-secondary);
     }
 
-    .domain-demo {
-      padding: 1em 0;
+    p.large {
+      font-size: 1.7em;
     }
 
     p {
-      line-height: 1.65;
+      font-size: 1.4em;
+      font-weight: 400;
+      padding: 1em 0 0 0;
+      margin: 0;
+      line-height: 1.5;
     }
 
-    code {
-      color: var(--color-text-inverted);
-      background-color: var(--color-bg-inverted);
-      padding: .15em .25em;
-      border-radius: .2em;
+    p.small {
+      font-size: 1em;
     }
 
-    .credits {
-      text-align: center;
-      font-size: .85em;
+    a {
+      color: var(--color-bg-secondary);
     }
 
-    @media (max-width: 1024px) {
-      .content {
-        max-width: 85%;
+    @media (max-width: 800px) {
+      main {
+        padding: 0 30px;
+      }
+
+      .url-example {
+        font-size: 1.6em;
+        padding: 6px 10px;
+      }
+
+      p.large {
+        font-size: 1.3em;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+
+      p.small {
+        font-size: .8em;
       }
     }
   </style>
 </head>
 <body>
 <main>
-  <div class="content">
-    <h1>is-an.app Subdomain Free</h1>
-    <h3>A free identity for developers on the web</h3>
-    <h3 class="domain-demo"><span class="typed"></span>.is-an.app</h3>
-    <p>
-      Are you a developer exploring an awesome name for your personal website and projects? You came to the right place!
+  <header>
+    <span class="url-example">https://<span class="typed"></span>.is-an.app</span>
+  </header>
+  <article>
+    <p class="large">
+      Are you a developer exploring an awesome domain name for your application, personal website, or project?
+      You came to the right place!
     </p>
     <p>
-      is-an.app is a free identity for developers on the web. This service offers a handy subdomain service for you to
-      have a subdomain like <code>foo.is-an.app</code> or <code>bar.is-an.app</code> for use on your static sites via
-      <strong>NS</strong>, <strong>CNAME</strong>, <strong>A</strong>, or <strong>AAAA</strong> DNS record. Fork, add
-      subdomain and send a <a
+      This service offers a handy subdomain service for you to have a subdomain via <strong>CNAME</strong>,
+      <strong>A</strong>, <strong>AAAA</strong>, or <strong>NS</strong> DNS records.
+      In limited cases, you can use a wildcard subdomain.
+    </p>
+    <p>
+      Fork the <a href="https://github.com/tarampampam/free-domains">repository</a>, add a subdomain, and send a <a
       href="https://github.com/tarampampam/free-domains/edit/master/dns-records.json" target="_parent">Pull
       Request</a>. We will make it work!
     </p>
-    <p class="credits">
-      A project by <a href="https://github.com/tarampampam">@tarampampam</a>
+    <p class="small">
+      Crafted with ❤ by <a href="https://github.com/tarampampam">@tarampampam</a>
     </p>
-  </div>
+  </article>
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
         integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-  new Typed('.typed', {
-    strings: ['my-project', 'home-router', 'smart-device', 'personal-blog', 'awesome-library', 'anything'],
+  new Typed('.typed', { // https://github.com/mattboldt/typed.js
+    strings: ['example', 'foo', '4free', 'your'],
     typeSpeed: 140,
-    showCursor: false
+    backDelay: 2000,
+    showCursor: false,
+    loop: true,
   })
 </script>
 </body>
