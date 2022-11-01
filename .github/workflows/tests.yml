@@ -42,5 +42,6 @@ jobs:
       - uses: walbo/validate-json@v1.1.0
         with:
           schema-version: draft-07
-          strict: false
+          print-valid-files: true
+          fail-on-missing-schema: true
           files: ./domains/**.json
