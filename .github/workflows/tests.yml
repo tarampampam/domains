@@ -45,4 +45,4 @@ jobs:
           print-valid-files: true
           fail-on-missing-schema: true
           strict: false
-          files: ./domains/**.json
+          files: ./domains/**/*.json
