@@ -353,7 +353,7 @@
           }
         }
       },
-      "oneOf": [
+      "anyOf": [
         {
           "required": [
             "TXT"
