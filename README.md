@@ -54,13 +54,12 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
 5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(usually, it takes 5..15 minutes)_
 6. Enjoy your new domain!
 
-### A few similar services worth checking out
+## If you didn't know...
 
-- [js.org](https://github.com/js-org/js.org)
-- [is-a.dev](https://github.com/is-a-dev/register)
-- [thedev.id](https://github.com/fransallen/thedev.id)
-- [js.cool](https://github.com/js-cool/js.cool)
-- [mod.land](https://github.com/denosaurs/mod.land)
+- What is GitHub pages and how to set up a custom domain, read the [docs here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
+- The difference between `A`, `CNAME`, and other record types, the article on Wikipedia [is here](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
+
+> 🔍 A few similar services can be [found here](https://free-for.dev/#/?id=domain).
 
 [badge-tests]:https://img.shields.io/github/workflow/status/tarampampam/free-domains/tests?label=tests&logo=github&style=for-the-badge
 [badge-deploy]:https://img.shields.io/github/workflow/status/tarampampam/free-domains/deploy?label=deploy&logo=github&style=for-the-badge
