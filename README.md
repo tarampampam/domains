@@ -54,7 +54,7 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
 5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(usually, it takes 5..15 minutes)_
 6. Enjoy your new domain!
 
-## If you didn't know...
+## If you don't know...
 
 - What is GitHub pages and how to set up a custom domain, read the [docs here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
 - The difference between `A`, `CNAME`, and other record types, the article on Wikipedia [is here](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
