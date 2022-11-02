@@ -54,7 +54,7 @@ First of all, I want to answer one important question - "Why are you giving out 
 | IP Geolocation (HTTP header `CF-IPCountry`) * |             ✅             |             ✅             |
 |             Maximum Upload Size *             |          100 MB           |          100 MB           |
 
-> * Available only when proxying (`"proxy": true`) is enabled
+> `*` Available only when proxying (`"proxy": true`) is enabled
 
 [dnssec]:https://developers.cloudflare.com/dns/additional-options/dnssec
 [ssl-full]:https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full/
