@@ -23,6 +23,46 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
 [badge-dnssec]:https://shields.io/badge/%20-DNSSEC-blue?logo=moleculer&logoColor=white&style=plastic?cacheSeconds=3600
 [badge-ssl]:https://shields.io/badge/SSL-Required-blue?style=plastic?cacheSeconds=3600
 
+Domains settings:
+
+|                    Option                     |       `*.is-an.app`       |        `*.1bt.uk`         |
+|:---------------------------------------------:|:-------------------------:|:-------------------------:|
+|               [DNSSEC][dnssec]                |             ✅             |             ✅             |
+|                     Email                     |             ❌             |             ❌             |
+|                   SSL/TLS *                   |     [Full][ssl-full]      |   [Flexible][ssl-flex]    |
+|              Always Use HTTPS *               |             ✅             |             ❌             |
+|     HTTP Strict Transport Security (HSTS)     |             ✅             |             ❌             |
+|             Minimum TLS Version *             |          TLS 1.2          |          TLS 1.2          |
+|          Opportunistic Encryption *           |             ✅             |             ✅             |
+|                   TLS 1.3 *                   |             ✅             |             ✅             |
+|       WAF (Web Application Firewall) *        | ✅ (Medium Security Level) | ✅ (Medium Security Level) |
+|           Browser Integrity Check *           |             ✅             |             ✅             |
+|       [Caching Level][caching-levels] *       |         Standard          |         Standard          |
+|              Browser Cache TTL *              |          4 hours          |          4 hours          |
+|       [Crawler Hints][crawler-hints] *        |             ✅             |             ✅             |
+|               [HTTP/2][http2] *               |             ✅             |             ✅             |
+|     [HTTP/2 to Origin][http2-to-origin] *     |             ✅             |             ✅             |
+|             HTTP/3 (with QUIC) *              |             ✅             |             ✅             |
+|     [0-RTT Connection Resumption][0rtt] *     |             ✅             |             ✅             |
+|                [gRPC][grpc] *                 |             ✅             |             ✅             |
+|                 WebSockets *                  |             ✅             |             ✅             |
+|         [Pseudo IPv4][pseudo-ipv4] *          |        Add header         |        Add header         |
+| IP Geolocation (HTTP header `CF-IPCountry`) * |             ✅             |             ✅             |
+|             Maximum Upload Size *             |          100 MB           |          100 MB           |
+
+> * Available only when proxying (`"proxy": true`) is enabled
+
+[dnssec]:https://developers.cloudflare.com/dns/additional-options/dnssec
+[ssl-full]:https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full/
+[ssl-flex]:https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/flexible/
+[caching-levels]:https://developers.cloudflare.com/cache/how-to/set-caching-levels
+[crawler-hints]:https://blog.cloudflare.com/crawler-hints-how-cloudflare-is-reducing-the-environmental-impact-of-web-searches/
+[http2]:https://www.cloudflare.com/website-optimization/http2/what-is-http2/
+[http2-to-origin]:https://developers.cloudflare.com/cache/how-to/enable-http2-to-origin
+[0rtt]:https://developers.cloudflare.com/fundamentals/network/0-rtt-connection-resumption/
+[grpc]:https://support.cloudflare.com/hc/en-us/articles/360050483011
+[pseudo-ipv4]:https://support.cloudflare.com/hc/en-us/articles/229666767
+
 # How to get one?
 
 1. Star and [fork](https://github.com/tarampampam/free-domains/fork) this repository
@@ -46,7 +86,7 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
     //"AAAA": ["::1"],
     //"NS": ["..."],
   },
-  "proxy": false // disable CF proxy
+  "proxy": false // disable CF proxy, true by default
 }
 ```
 
