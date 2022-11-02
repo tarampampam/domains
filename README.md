@@ -23,7 +23,11 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
 [badge-dnssec]:https://shields.io/badge/%20-DNSSEC-blue?logo=moleculer&logoColor=white&style=plastic?cacheSeconds=3600
 [badge-ssl]:https://shields.io/badge/SSL-Required-blue?style=plastic?cacheSeconds=3600
 
-Domains settings:
+## Why?
+
+First of all, I want to answer one important question - "Why are you giving out domains for free?". Because sometimes I need domains for my home projects, and instead of buying new domains every time, I decided to buy one for everyone, and use subdomains. And why not share them with the community?
+
+## Domains settings
 
 |                    Option                     |       `*.is-an.app`       |        `*.1bt.uk`         |
 |:---------------------------------------------:|:-------------------------:|:-------------------------:|
