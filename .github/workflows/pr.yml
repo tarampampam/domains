@@ -16,21 +16,3 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: core.setFailed('⭐ Please, star this repository!')
-
-  set-assigner:
-    name: Set PR assigner
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/github-script@v6
-        with:
-          script: |
-            if (!context.payload.pull_request || context.payload.pull_request.draft) { // is not a pull request or is a draft
-              return
-            }
-
-            await github.rest.issues.addAssignees({ // https://bit.ly/3NnYchJ
-              owner: context.payload.repository.owner.login,
-              repo: context.payload.repository.name,
-              issue_number: context.payload.pull_request.number,
-              assignees: ['tarampampam'],
-            })
