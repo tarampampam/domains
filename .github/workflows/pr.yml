@@ -9,8 +9,17 @@ jobs:
   check-user-star:
     name: Check the user's star
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - {uses: gacts/is-stargazer@v1, with: {username: '${{ github.event.pull_request.user.login }}'}, id: check-star}
+
+      - if: steps.check-star.outputs.is-stargazer != 'true'
+        uses: thollander/actions-comment-pull-request@v1
+        with:
+          message: <!--ID:STAR-->⭐ Please, star this repository!
+          comment_includes: <!--ID:STAR-->
 
       - if: steps.check-star.outputs.is-stargazer != 'true'
         uses: actions/github-script@v6
