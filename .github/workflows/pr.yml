@@ -20,6 +20,8 @@ jobs:
   checklist:
     name: Message a checklist to the PR
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - uses: thollander/actions-comment-pull-request@v1
         with:
