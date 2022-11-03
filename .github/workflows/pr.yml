@@ -16,3 +16,23 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: core.setFailed('⭐ Please, star this repository!')
+
+  checklist:
+    name: Message a checklist to the PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: thollander/actions-comment-pull-request@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+          message: |
+            Please, verify each item and check them (`[x]`) only when it is done:
+
+            - [ ] You have clearly described a reason for the domain registration (and what you plan to use it for) in the PR description
+            - [ ] You have completed your website, there's no type of placeholder on the website
+            - [ ] The website is reachable and a link to it is in the PR description
+            - [ ] The `CNAME` record doesn't contain `https://` or `/`
+            - [ ] There is sufficient information in the `owner` field
+            - [ ] Your PR passes all CI checks
+
+            <!--ID:CHECKLIST-->
+          comment_includes: <!--ID:CHECKLIST-->
