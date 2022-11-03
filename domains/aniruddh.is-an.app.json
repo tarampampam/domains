@@ -1,6 +1,6 @@
 {
 	"$schema": "../schemas/domain.schema.json",
-	"description": "My personal project",
+	"description": "A development, designing and programing related stuff",
 	"domain": "is-an.app",
 	"subdomain": "aniruddh",
 	"owner": {
