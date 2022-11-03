@@ -1,18 +1,14 @@
 {
-  "$schema": "../schemas/domain.schema.json",
-  "description": "My personal project", // what is it?
-  "domain": "is-an.app", // or "1bt.uk"
-  "subdomain": "aniruddh",
-  "owner": {
-    "repo": "https://github.com/aniruddhnishad", // URL to the target repository or your GitHub account
-    "email": "mr.aniruddhnishad@gmail.com" // optional
-  },
-  "record": {
-    //"CNAME": "user.github.io.",
-    //"TXT": ["..."],
-    //"A": ["127.0.0.1"],
-    "AAAA": ["2a01:4f8:150:7155:5b::9a8e"],
-    //"NS": ["..."],
-  },
-  "proxy": true // disable CF proxy, true by default
+	"$schema": "../schemas/domain.schema.json",
+	"description": "My personal project",
+	"domain": "is-an.app",
+	"subdomain": "aniruddh",
+	"owner": {
+		"repo": "https://github.com/aniruddhnishad",
+		"email": "mr.aniruddhnishad@gmail.com"
+	},
+	"record": {
+		"AAAA": ["2a01:4f8:150:7155:5b::9a8e"]
+	},
+	"proxy": true
 }
