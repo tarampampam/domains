@@ -71,7 +71,7 @@ First of all, I want to answer one important question - "Why are you giving out 
 
 1. Star and [fork](https://github.com/tarampampam/free-domains/fork) this repository
 2. Add a new file called `your-subdomain-name.domain.json` in the `./domains` folder to register `your-subdomain-name` subdomain
-3. Edit it (below is just an **example**, provide a **valid** JSON file with your needs):
+3. Edit it (below is just an **example**, provide a **valid** JSON file with your needs; format you can [check here](https://jsonlint.com/)):
 
 ```json5
 {
