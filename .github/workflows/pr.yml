@@ -1,7 +1,7 @@
 name: pr
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize, reopened, ready_for_review, review_requested] # https://bit.ly/3FEj9D4
     branches: [master, main]
 
@@ -9,10 +9,39 @@ jobs:
   check-user-star:
     name: Check the user's star
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - {uses: gacts/is-stargazer@v1, with: {username: '${{ github.event.pull_request.user.login }}'}, id: check-star}
+
+      - if: steps.check-star.outputs.is-stargazer != 'true'
+        uses: thollander/actions-comment-pull-request@v1
+        with:
+          message: <!--ID:STAR-->⭐ Please, star this repository!
+          comment_includes: <!--ID:STAR-->
 
       - if: steps.check-star.outputs.is-stargazer != 'true'
         uses: actions/github-script@v6
         with:
           script: core.setFailed('⭐ Please, star this repository!')
+
+  checklist:
+    name: Message a checklist to the PR
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: thollander/actions-comment-pull-request@v1
+        with:
+          message: |
+            Please, verify each item and check them only when it is done:
+
+            - [ ] You have clearly described a reason for the domain registration (and what you plan to use it for) in the PR description
+            - [ ] The website is reachable and a link to it is in the PR description
+            - [ ] There is sufficient information in the `owner` field
+            - [ ] Your PR passes all CI checks
+
+            <!--ID:CHECKLIST-->
+          comment_includes: <!--ID:CHECKLIST-->
