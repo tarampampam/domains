@@ -1,0 +1,14 @@
+{
+	"$schema": "../schemas/domain.schema.json",
+	"description": "A development, designing and programing related stuff",
+	"domain": "is-an.app",
+	"subdomain": "aniruddh",
+	"owner": {
+		"repo": "https://github.com/aniruddhnishad",
+		"email": "mr.aniruddhnishad@gmail.com"
+	},
+	"record": {
+		"AAAA": ["2a01:4f8:150:7155:5b::9a8e"]
+	},
+	"proxy": true
+}
