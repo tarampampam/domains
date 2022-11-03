@@ -36,12 +36,12 @@ jobs:
       - uses: thollander/actions-comment-pull-request@v1
         with:
           message: |
-            Please, verify each item and check them only when it is done:
+            Please, make sure that your PR passes this checklist:
 
-            - [ ] You have clearly described a reason for the domain registration (and what you plan to use it for) in the PR description
-            - [ ] The website is reachable and a link to it is in the PR description
-            - [ ] There is sufficient information in the `owner` field
-            - [ ] Your PR passes all CI checks
+            - You have clearly described a reason for the domain registration (and what you plan to use it for) in the PR description
+            - The website is reachable and a link to it is in the PR description
+            - There is sufficient information in the `owner` field
+            - Your PR passes all CI checks
 
             <!--ID:CHECKLIST-->
           comment_includes: <!--ID:CHECKLIST-->
