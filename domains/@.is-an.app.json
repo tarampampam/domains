@@ -2,7 +2,7 @@
   "$schema": "../schemas/domain.schema.json",
   "description": "Root domain",
   "domain": "is-an.app",
-  "subdomain": "@",
+  "subdomain": "ashi009",
   "owner": {
     "repo": "https://github.com/tarampampam/free-domains"
   },
