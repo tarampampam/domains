@@ -35,4 +35,4 @@ jobs:
 
             <!--ID:CHECKLIST-->
           comment_includes: <!--ID:CHECKLIST-->
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
