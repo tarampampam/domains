@@ -1,7 +1,7 @@
 name: pr
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize, reopened, ready_for_review, review_requested] # https://bit.ly/3FEj9D4
     branches: [master, main]
 
@@ -21,6 +21,7 @@ jobs:
     name: Message a checklist to the PR
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       pull-requests: write
     steps:
       - uses: thollander/actions-comment-pull-request@v1
