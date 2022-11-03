@@ -25,7 +25,7 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
 
 ## Why?
 
-First of all, I want to answer one important question - "Why are you giving out domains for free?". Because sometimes I need domains for my home projects, and instead of buying new domains every time, I decided to buy one for everyone, and use subdomains. And why not share them with the community?
+First of all, I want to answer one important question - "Why are you giving out domains for free?". Because sometimes I need domains for my pet projects, and instead of buying new domains every time, I decided to buy one for everyone, and use subdomains. And why not share them with the community?
 
 ## Domains settings
 
