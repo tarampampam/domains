@@ -29,30 +29,25 @@ First of all, I want to answer one important question - "Why are you giving out 
 
 ## Domains settings
 
-|                    Option                     |       `*.is-an.app`       |        `*.1bt.uk`         |
-|:---------------------------------------------:|:-------------------------:|:-------------------------:|
-|               [DNSSEC][dnssec]                |             ✅             |             ✅             |
-|                     Email                     |             ❌             |             ❌             |
-|                   SSL/TLS *                   |     [Full][ssl-full]      |   [Flexible][ssl-flex]    |
-|              Always Use HTTPS *               |             ✅             |             ❌             |
-|     HTTP Strict Transport Security (HSTS)     |             ✅             |             ❌             |
-|             Minimum TLS Version *             |          TLS 1.2          |          TLS 1.2          |
-|          Opportunistic Encryption *           |             ✅             |             ✅             |
-|                   TLS 1.3 *                   |             ✅             |             ✅             |
-|       WAF (Web Application Firewall) *        | ✅ (Medium Security Level) | ✅ (Medium Security Level) |
-|           Browser Integrity Check *           |             ✅             |             ✅             |
-|       [Caching Level][caching-levels] *       |         Standard          |         Standard          |
-|              Browser Cache TTL *              |          4 hours          |          4 hours          |
-|       [Crawler Hints][crawler-hints] *        |             ✅             |             ✅             |
-|               [HTTP/2][http2] *               |             ✅             |             ✅             |
-|     [HTTP/2 to Origin][http2-to-origin] *     |             ✅             |             ✅             |
-|             HTTP/3 (with QUIC) *              |             ✅             |             ✅             |
-|     [0-RTT Connection Resumption][0rtt] *     |             ✅             |             ✅             |
-|                [gRPC][grpc] *                 |             ✅             |             ✅             |
-|                 WebSockets *                  |             ✅             |             ✅             |
-|         [Pseudo IPv4][pseudo-ipv4] *          |        Add header         |        Add header         |
-| IP Geolocation (HTTP header `CF-IPCountry`) * |             ✅             |             ✅             |
-|             Maximum Upload Size *             |          100 MB           |          100 MB           |
+|                                   Option                                   |       `*.is-an.app`       |        `*.1bt.uk`         |
+|:--------------------------------------------------------------------------:|:-------------------------:|:-------------------------:|
+|                              [DNSSEC][dnssec]                              |             ✅             |             ✅             |
+|                                   Email                                    |             ❌             |             ❌             |
+|                                 SSL/TLS *                                  |     [Full][ssl-full]      |   [Flexible][ssl-flex]    |
+|                             Always Use HTTPS *                             |             ✅             |             ❌             |
+|                   HTTP Strict Transport Security (HSTS)                    |             ✅             |             ❌             |
+|                           Minimum TLS Version *                            |          TLS 1.2          |          TLS 1.2          |
+|                    Opportunistic Encryption, TLS 1.3 *                     |             ✅             |             ✅             |
+|                      WAF (Web Application Firewall) *                      | ✅ (Medium Security Level) | ✅ (Medium Security Level) |
+|                         Browser Integrity Check *                          |             ✅             |             ✅             |
+|            [Caching Level][caching-levels], Browser Cache TTL *            |     Standard, 4 hours     |     Standard, 4 hours     |
+|                      [Crawler Hints][crawler-hints] *                      |             ✅             |             ✅             |
+| [HTTP/2][http2], [HTTP/2 to Origin][http2-to-origin], HTTP/3 (with QUIC) * |             ✅             |             ✅             |
+|                   [0-RTT Connection Resumption][0rtt] *                    |             ✅             |             ✅             |
+|                         [gRPC][grpc], WebSockets *                         |             ✅             |             ✅             |
+|                        [Pseudo IPv4][pseudo-ipv4] *                        |        Add header         |        Add header         |
+|               IP Geolocation (HTTP header `CF-IPCountry`) *                |             ✅             |             ✅             |
+|                           Maximum Upload Size *                            |          100 MB           |          100 MB           |
 
 > `*` Available only when proxying (`"proxy": true`) is enabled
 
