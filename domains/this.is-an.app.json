@@ -1,0 +1,35 @@
+{
+
+  "$schema": "../schemas/domain.schema.json",
+
+  "description": "My personal bio", // what is it?
+
+  "domain": "is-an.app", // or "1bt.uk"
+
+  "subdomain": "this",
+
+  "owner": {
+
+    "repo": "https://github.com/cx622", // URL to the target repository or your GitHub account
+
+    "email": "this-email.is-sus.com" // optional
+
+  },
+
+  "record": {
+
+    "CNAME": "lmao.tk",
+
+    "TXT": ["replit-verify=aa17ed7f-8004-4eee-a719-8b639e942492"],
+
+    //"A": ["127.0.0.1"],
+
+    //"AAAA": ["::1"],
+
+    //"NS": ["..."],
+
+  },
+
+  "proxy": false // disable CF proxy, true by default
+
+}
