@@ -27,6 +27,14 @@ jobs:
       - uses: thollander/actions-comment-pull-request@v1
         with:
           message: |
+            Your PR has been created! Please now wait for a maintainer to approve it.
+
+            ### Made a mistake in the record?
+            
+            Don't worry, you can edit the changes in your repo and they should automatically be added to this PR.
+
+            ---
+
             Please, make sure that your PR passes the following checklist:
 
             - You have clearly described a reason for the domain registration (and what you plan to use it for) in the PR description
