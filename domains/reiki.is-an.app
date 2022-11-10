@@ -7,7 +7,7 @@
 		"email": "orekidev@gmail.com"
 	},
 	"record": {
-		"CNAME": "cname.vercel-dns.com"
+		"CNAME": "cname.vercel-dns.com."
 	},
 	"proxy": true
 }
