@@ -5,7 +5,7 @@
   "subdomain": "rwbox",
   "owner": {
     "repo": "https://github.com/ourstorycomic/rw-box",
-    "gmail": "kaz442197@gmail.com"
+    "email": "kaz442197@gmail.com"
   },
   "record": {
     "CNAME": "hourstorycomic.github.io.",
