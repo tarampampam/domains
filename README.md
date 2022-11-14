@@ -64,14 +64,14 @@ First of all, I want to answer one important question - "Why are you giving out 
 
 # How to get one?
 
-1. Star and [fork](https://github.com/tarampampam/free-domains/fork) this repository
+1. Star and [fork](https://github.com/tarampampam/free-domains/fork) this repository (follow [this guide](https://github.com/firstcontributions/first-contributions) if you don't  know how to make a contributions)
 2. Add a new file called `your-subdomain-name.domain.json` in the `./domains` folder to register `your-subdomain-name` subdomain
-3. Edit it (below is just an **example**, provide a **valid** JSON file with your needs; format you can [check here](https://jsonlint.com/)):
+3. Edit it (below is just an **example**, provide a **valid** JSON file with your needs, the format is very strict; format you can [check here](https://jsonlint.com/)):
 
 ```json5
 {
   "$schema": "../schemas/domain.schema.json",
-  "description": "My personal project", // what is it?
+  "description": "My personal project", // describe your project in this field
   "domain": "is-an.app", // or "1bt.uk"
   "subdomain": "your-subdomain-name",
   "owner": {
@@ -85,11 +85,11 @@ First of all, I want to answer one important question - "Why are you giving out 
     //"AAAA": ["::1"],
     //"NS": ["..."],
   },
-  "proxy": false // disable CF proxy, true by default
+  "proxy": false // disable the CF proxy, proxying is always enabled by default
 }
 ```
 
-4. Your pull request will be reviewed and merged. Please, don't ignore the PR checklist (your PR will be ignored if you ignore this requirement). _Make sure to keep an eye on it in case we need you to make any changes!_
+4. Your pull request will be reviewed and merged. Please, don't ignore the PR checklist (your PR will be ignored if you ignore this requirement). If you ignore the rules, your PR will be ignored too. _Make sure to keep an eye on it in case we need you to make any changes!_
 5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(usually, it takes 5..15 minutes)_
 6. Enjoy your new domain!
 
