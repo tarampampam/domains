@@ -1,0 +1,17 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "SSH connection profile and to test service", // what is it?
+  "domain": "1bt.uk", // or "1bt.uk"
+  "subdomain": "4x2",
+  "owner": {
+    "repo": "https://github.com/four-by-two/statics", // URL to the target repository or your GitHub account
+    "email": "my@email.com" // optional
+  },
+  "record": {
+    //"TXT": [".."],
+    "A": ["162.19.153.19"],
+    //"AAAA": ["::1"],
+    //"NS": ["..."],
+  },
+  "proxy": false // disable CF proxy, true by default
+}
