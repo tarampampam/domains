@@ -89,7 +89,7 @@ First of all, I want to answer one important question - "Why are you giving out 
 }
 ```
 
-4. Your pull request will be reviewed and merged. Please, don't ignore the PR checklist (your PR will be ignored if you ignore this requirement). If you ignore the rules, your PR will be ignored too. _Make sure to keep an eye on it in case we need you to make any changes!_
+4. Your pull request will be reviewed and merged. Please, don't ignore the PR checklist. If you ignore this repository rules, your PR will be ignored too. _Make sure to keep an eye on it in case we need you to make any changes!_
 5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(usually, it takes 5..15 minutes)_
 6. Enjoy your new domain!
 
