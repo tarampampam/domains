@@ -1,0 +1,13 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "WebHook tester demo stand",
+  "domain": "is-an.app",
+  "subdomain": "webhook-tester",
+  "owner": {
+    "repo": "https://github.com/tarampampam/webhook-tester"
+  },
+  "record": {
+    "CNAME": "webhook-tester.onrender.com."
+  },
+  "proxy": true
+}
