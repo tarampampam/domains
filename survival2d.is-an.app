@@ -1,0 +1,13 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "My project on school",
+  "subdomain": "survival2d",
+  "owner": {
+    "repo": "https://github.com/tiennm99/free-domains",
+    "email": "minhtienit99@gmail.com"
+  },
+  "record": {
+    "CNAME": "miti99.eu.org"
+  },
+  "proxy": false
+}
