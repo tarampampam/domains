@@ -7,7 +7,7 @@
     "email": "minhtienit99@gmail.com"
   },
   "record": {
-    "CNAME": "miti99.eu.org"
+    "CNAME": "miti99.eu.org."
   },
   "proxy": false
 }
