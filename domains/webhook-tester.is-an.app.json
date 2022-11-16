@@ -9,5 +9,5 @@
   "record": {
     "CNAME": "webhook-tester.onrender.com."
   },
-  "proxy": true
+  "proxy": false
 }
