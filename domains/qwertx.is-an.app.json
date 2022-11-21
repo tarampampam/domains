@@ -4,6 +4,7 @@
   "domain": "is-an.app",
   "subdomain": "qwertx",
   "owner": {
+    "repo": "https://github.com/NotQWertz/NotQWertz.github.io",
     "email": "zuweyrh752@gmail.com"
   },
   "record": {
