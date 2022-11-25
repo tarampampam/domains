@@ -7,7 +7,7 @@
     "repo": "https://github.com/naybiblu/squared",
   },
   "record": {
-    "TXT": ["..."],
+    "TXT": ["vc-domain-verify=squared.is-an.app,d5bd4cfe9a5d62b9410c"],
   },
   "proxy": false
 }
