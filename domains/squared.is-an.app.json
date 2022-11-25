@@ -1,0 +1,13 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "Social media site",
+  "domain": "is-an.app",
+  "subdomain": "squared",
+  "owner": {
+    "repo": "https://github.com/naybiblu/squared",
+  },
+  "record": {
+    "TXT": ["..."],
+  },
+  "proxy": false
+}
