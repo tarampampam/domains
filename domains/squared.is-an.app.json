@@ -4,10 +4,10 @@
   "domain": "is-an.app",
   "subdomain": "squared",
   "owner": {
-    "repo": "https://github.com/naybiblu/squared",
+    "repo": "https://github.com/naybiblu/squared"
   },
   "record": {
-    "TXT": ["vc-domain-verify=squared.is-an.app,d5bd4cfe9a5d62b9410c"],
+    "TXT": ["vc-domain-verify=squared.is-an.app,d5bd4cfe9a5d62b9410c"]
   },
   "proxy": true
 }
