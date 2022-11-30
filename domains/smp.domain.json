@@ -1,18 +1,14 @@
 {
   "$schema": "../schemas/domain.schema.json",
-  "description": "Sakana Music Player Project", // describe your project in this field
-  "domain": "is-an.app", // or "1bt.uk"
+  "description": "Sakana Music Player",
+  "domain": "is-an.app",
   "subdomain": "smp",
   "owner": {
-    "repo": "https://github.com/YanDao0313/SakanaMusicPlayer", // URL to the target repository or your GitHub account
-    //"email": "my@email.com" // optional
+    "repo": "https://github.com/YanDao0313/SakanaMusicPlayer",
+    "email": "pullrequest@ydlk.cc"
   },
   "record": {
-    "CNAME": "yandao0313.github.io.",
-    //"TXT": ["..."],
-    //"A": ["127.0.0.1"],
-    //"AAAA": ["::1"],
-    //"NS": ["..."],
+    "CNAME": "yandao0313.github.io."
   },
-  "proxy": false // disable the CF proxy, proxying is always enabled by default
+  "proxy": false
 }
