@@ -1,0 +1,14 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "COSMO Service",
+  "domain": "is-an.app",
+  "subdomain": "cosmo",
+  "owner": {
+    "repo": "https://github.com/valhk/cosmo",
+    "email": "val.hk@proton.me"
+  },
+  "record": {
+    "CNAME": "valhk.github.io."
+  },
+  "proxy": false
+}
