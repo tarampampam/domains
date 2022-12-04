@@ -1,15 +1,15 @@
 {
-  "$schema": "../schemas/domain.schema.json",
-  "description": "For Project",
-  "domain": "is-an.app",
-  "subdomain": "whatsme",
-  "owner": {
-    "repo": "https://github.com/DhruvilMoradiya/WhatsMe",
-    "email": "dhruvil1808@gmail.com"
-  },
-  "record": {
-    "TXT": ["google-site-verification=vK93Vg8HzOeEMVpVv3IE82AXD2YSNRGgk44VJWvKKwY"],
-    "A": ["199.36.158.100"],
-  },
-  "proxy": false // disable the CF proxy, proxying is always enabled by default
+	"$schema": "../schemas/domain.schema.json",
+	"description": "For Project",
+	"domain": "is-an.app",
+	"subdomain": "whatsme",
+	"owner": {
+		"repo": "https://github.com/DhruvilMoradiya/WhatsMe",
+		"email": "dhruvil1808@gmail.com"
+	},
+	"record": {
+		"TXT": ["google-site-verification=vK93Vg8HzOeEMVpVv3IE82AXD2YSNRGgk44VJWvKKwY"],
+		"A": ["199.36.158.100"]
+	},
+	"proxy": false
 }
