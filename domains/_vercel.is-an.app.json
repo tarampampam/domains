@@ -1,0 +1,14 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "Verification (Vercel)",
+  "domain": "is-an.app",
+  "subdomain": "_vercel",
+  "owner": {
+    "repo": "https://github.com/naybiblu/squared",
+    "email": "iamsuperv15@gmail.com"
+  },
+  "record": {
+    "TXT": ["d5bd4cfe9a5d62b9410c"]
+  },
+  "proxy": false
+}
