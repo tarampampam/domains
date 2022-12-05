@@ -65,25 +65,25 @@ First of all, I want to answer one important question - "Why are you giving out 
 # How to get one?
 
 1. Star and [fork](https://github.com/tarampampam/free-domains/fork) this repository (follow [this guide](https://github.com/firstcontributions/first-contributions) if you don't  know how to make a contributions)
-2. Add a new file called `your-subdomain-name.domain.json` in the `./domains` folder to register `your-subdomain-name` subdomain
+2. Add a new file called `<your-subdomain-name>.<root-domain>.json` in the `./domains` folder to register `<your-subdomain-name>` subdomain
 3. Edit it (below is just an **example**, provide a **valid** JSON file with your needs, the format is very strict; format you can [check here](https://jsonlint.com/)):
 
-```json5
+```json
 {
   "$schema": "../schemas/domain.schema.json",
-  "description": "My personal project", // describe your project in this field
-  "domain": "is-an.app", // or "1bt.uk"
-  "subdomain": "your-subdomain-name",
+  "description": "<describe your project in this field>",
+  "domain": "<is-an.app or 1bt.uk - select one>",
+  "subdomain": "<your subdomain name>",
   "owner": {
-    "repo": "https://github.com/user/repo", // URL to the target repository or your GitHub account
-    "email": "my@email.com" // optional
+    "repo": "<https://URL/to/the/repository/with/subdomain/content/sources>",
+    "email": "<your-public@email.address>"
   },
   "record": {
-    "CNAME": "user.github.io.",
-    //"TXT": ["..."],
-    //"A": ["127.0.0.1"],
-    //"AAAA": ["::1"],
-    //"NS": ["..."],
+    "CNAME": "<cname-domain-with-a-dot-at-the-end>",
+    "TXT": ["list", "of", "required", "txt", "records"],
+    "A": ["list", "of", "IPv4", "addresses", "like", "a", "127.0.0.1"],
+    "AAAA": ["list", "of", "IPv6", "addresses", "like", "a", "::1"],
+    "NS": ["list", "of", "nameservers"]
   },
   "proxy": false // disable the CF proxy, proxying is always enabled by default
 }
