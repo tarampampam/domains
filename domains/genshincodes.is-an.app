@@ -8,7 +8,7 @@
     "email": "mrgamers11223@gmail.com"
   },
   "record": {
-    "CNAME": "https://lime-average-parrot.cyclic.app",
+    "CNAME": "lime-average-parrot.cyclic.app."
   },
   "proxy": true
 }
