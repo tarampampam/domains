@@ -2,7 +2,7 @@
   "$schema": "../schemas/domain.schema.json",
   "description": "A Subdomain used for SSL verification for genshincodes.is-an.app Domains",
   "domain": "is-an.app",
-  "subdomain": "_9c53278d39d8a85540859a0f3cd4f159.genshincodes.is-an.app",
+  "subdomain": "_9c53278d39d8a85540859a0f3cd4f159.genshincodes",
   "owner": {
     "repo": "https://github.com/gamersindo1223/genshin-codeslist",
     "email": "mrgamers11223@gmail.com"
@@ -10,5 +10,5 @@
   "record": {
     "CNAME": "_447ae5c7823bec8068351487fb5c2e3c.mwfgkbkczp.acm-validations.aws."
   },
-  "proxy": false // disable the CF proxy, proxying is always enabled by default
+  "proxy": false
 }
