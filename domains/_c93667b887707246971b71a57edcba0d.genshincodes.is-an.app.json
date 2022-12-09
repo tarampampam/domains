@@ -1,0 +1,14 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "SSL cert verification",
+  "domain": "is-an.app",
+  "subdomain": "_349869aff0148b694aefdabd6f2ec01d.api.genshincodes",
+  "owner": {
+    "repo": "https://github.com/gamersindo1223/genshin-codeslist",
+    "email": "mrgamers11223@gmail.com"
+  },
+  "record": {
+    "CNAME": "_5db81e03fd7c0919a8937167d2023ef4.mwfgkbkczp.acm-validations.aws."
+  },
+  "proxy": true
+}
