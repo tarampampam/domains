@@ -2,7 +2,7 @@
   "$schema": "../schemas/domain.schema.json",
   "description": "SSL Certificate for genshincoeslist api",
   "domain": "is-an.app",
-  "subdomain": "_349869aff0148b694aefdabd6f2ec01d.api.genshincodes.",
+  "subdomain": "_349869aff0148b694aefdabd6f2ec01d.api.genshincodes",
   "owner": {
     "repo": "https://github.com/gamersindo1223/genshin-codeslist",
     "email": "mrgamers11223@gmail.com"
