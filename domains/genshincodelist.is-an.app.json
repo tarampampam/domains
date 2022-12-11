@@ -1,0 +1,14 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "mainpage for my api",
+  "domain": "is-an.app",
+  "subdomain": "genshincodelist",
+  "owner": {
+    "repo": "https://github.com/gamersindo1223/mainpage-genshincodelist",
+    "email": "mrgamers11223.json"
+  },
+  "record": {
+    "CNAME": "lime-average-parrot.cyclic.app.",
+  },
+  "proxy": false 
+}
