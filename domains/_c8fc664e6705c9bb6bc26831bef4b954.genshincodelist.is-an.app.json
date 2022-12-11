@@ -1,0 +1,14 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "SSL Verification for my api mainpage",
+  "domain": "is-an.app",
+  "subdomain": "_c8fc664e6705c9bb6bc26831bef4b954.genshincodelist",
+  "owner": {
+    "repo": "https://github.com/gamersindo1223/mainpage-genshincodelist",
+    "email": "mrgamers11223.json"
+  },
+  "record": {
+    "CNAME": "_4b9ee8f45a0b2c1c9a7a4771ce40bbc9.pmgvbzmzyk.acm-validations.aws.",
+  },
+  "proxy": false 
+}
