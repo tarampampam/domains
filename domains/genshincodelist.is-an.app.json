@@ -1,14 +1,14 @@
 {
   "$schema": "../schemas/domain.schema.json",
-  "description": "An Api used to give promotional genshin codes by scrapping web",
+  "description": "mainpage for my api",
   "domain": "is-an.app",
-  "subdomain": "genshincodes",
+  "subdomain": "genshincodelist",
   "owner": {
-    "repo": "https://github.com/gamersindo1223/genshin-codeslist",
+    "repo": "https://github.com/gamersindo1223/mainpage-genshincodelist",
     "email": "mrgamers11223@gmail.com"
   },
   "record": {
     "CNAME": "naughty-goat-slacks.cyclic.app."
   },
-  "proxy": true
+  "proxy": false 
 }
