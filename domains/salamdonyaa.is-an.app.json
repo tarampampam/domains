@@ -1,0 +1,14 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "testvmess-xui",
+  "domain": "is-an.app",
+  "subdomain": "salamdonyaa",
+  "owner": {
+    "repo": "https://github.com/hakiran16/free-domains",
+    "email": "hakiran16+1@gmail.com"
+  },
+  "record": {
+    "A": "139.177.178.44"
+  },
+  "proxy": false 
+  
