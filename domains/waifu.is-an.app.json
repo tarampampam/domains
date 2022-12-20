@@ -1,8 +1,8 @@
 {
 	"$schema": "../schemas/domain.schema.json",
-	"description": "A Discord Bot, Related To Anime",
+	"description": "A Web API For Anime Waifus",
 	"domain": "is-an.app",
-	"subdomain": "reiki",
+	"subdomain": "waifu",
 	"owner": {
 		"email": "orekidev@gmail.com"
 	},
