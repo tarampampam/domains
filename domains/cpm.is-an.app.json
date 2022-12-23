@@ -1,0 +1,13 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "Host/Server for CPM - Cool Package Manager.",
+  "domain": "is-an.app",
+  "subdomain": "cpm",
+  "owner": {
+    "email": "sevenworks@goatmail.uk"
+  },
+  "record": {
+    "CNAME": "78c6302c-038d-4092-a570-512ae88543d1.id.repl.co"
+  },
+  "proxy": false
+}
