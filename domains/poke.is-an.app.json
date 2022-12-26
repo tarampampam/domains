@@ -7,7 +7,6 @@
     "repo": "https://github.com/tarampampam/poke"
   },
   "record": {
-    "CNAME": "tarampampam.github.io."
-  },
-  "proxy": true
+    "CNAME": "tarampampam.github.io"
+  }
 }

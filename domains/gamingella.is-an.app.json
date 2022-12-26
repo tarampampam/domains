@@ -8,7 +8,7 @@
     "email": "domains@rhysjames.tk"
   },
   "record": {
-    "CNAME": "rhysjamesmason.github.io."
+    "CNAME": "rhysjamesmason.github.io"
   },
   "proxy": false
 }

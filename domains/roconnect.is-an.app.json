@@ -8,7 +8,6 @@
     "email": "amolmilton@gmail.com"
   },
   "record": {
-    "CNAME": "roconnect-128i.glitch.me."
-  },
-  "proxy": true
+    "CNAME": "roconnect-128i.glitch.me"
+  }
 }

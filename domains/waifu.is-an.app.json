@@ -7,7 +7,6 @@
     "email": "orekidev@gmail.com"
   },
   "record": {
-    "CNAME": "border.hop.io."
-  },
-  "proxy": true
+    "CNAME": "border.hop.io"
+  }
 }
