@@ -89,6 +89,8 @@ First of all, I want to answer one important question - "Why are you giving out 
 }
 ```
 
+> For the more details about the format, please, check the [JSON schema](./schemas/domain.schema.json)
+
 4. Your pull request will be reviewed and merged. Please, don't ignore the PR checklist. If you ignore this repository rules, your PR will be ignored too. _Make sure to keep an eye on it in case we need you to make any changes!_
 5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(usually, it takes 5..15 minutes)_
 6. Enjoy your new domain!
