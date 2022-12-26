@@ -139,6 +139,6 @@ for (var i in domains) {
   }
 }
 
-for (var domainName in commit) {
-  D(domainName, regNone, providerCf, commit[domainName])
+for (var resultDomainName in commit) {
+  D(resultDomainName, regNone, providerCf, commit[resultDomainName])
 }
