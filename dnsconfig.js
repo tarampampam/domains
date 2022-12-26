@@ -10,16 +10,7 @@ var proxy = { // https://stackexchange.github.io/dnscontrol/providers/cloudflare
  * Note: glob() is only an internal undocumented helper function (maybe risky).
  *
  * @param {String} filesPath
- * @returns {{
- *  name: string,
- *  data: {
- *    description: string,
- *    domain: string,
- *    subdomain: string,
- *    owner?: {repo?: string, email?: string},
- *    record: {TXT?: string[], A?: string[], AAAA?: string[], CNAME?: string, NS?: string[]},
- *    proxy?: boolean
- *  }}[]}
+ * @returns {ISubDomain[]}
  */
 function getDomainsList(filesPath) {
   var result = []
@@ -42,12 +33,13 @@ var domains = getDomainsList('./domains')
  */
 var commit = {}
 
-for (var idx in domains) {
-  var domainData = domains[idx].data
+for (var i in domains) {
+  var domainData = domains[i].data
+  var domainName = domainData.domain
   var proxyState = proxy.on // enabled by default
 
-  if (!commit[domainData.domain]) {
-    commit[domainData.domain] = []
+  if (!commit[domainName]) {
+    commit[domainName] = []
   }
 
   if (domainData.proxy === false) {
@@ -56,39 +48,93 @@ for (var idx in domains) {
 
   if (domainData.record.TXT) {
     for (var txt in domainData.record.TXT) {
-      commit[domainData.domain].push(
-        TXT(domainData.subdomain, domainData.record.TXT[txt]) // https://stackexchange.github.io/dnscontrol/js#TXT
+      commit[domainName].push(
+        TXT(domainData.subdomain, domainData.record.TXT[txt])
       )
     }
   }
 
   if (domainData.record.CNAME) {
-    commit[domainData.domain].push(
-      CNAME(domainData.subdomain, domainData.record.CNAME, proxyState) // https://stackexchange.github.io/dnscontrol/js#CNAME
+    var cname = domainData.record.CNAME.replace(/\.+$/, '') + '.'
+
+    commit[domainName].push(
+      CNAME(domainData.subdomain, cname, proxyState)
     )
   }
 
   if (domainData.record.A) {
     for (var a in domainData.record.A) {
-      commit[domainData.domain].push(
-        A(domainData.subdomain, IP(domainData.record.A[a]), proxyState) // https://stackexchange.github.io/dnscontrol/js#A
+      commit[domainName].push(
+        A(domainData.subdomain, IP(domainData.record.A[a]), proxyState)
       )
     }
   }
 
   if (domainData.record.AAAA) {
     for (var aaaa in domainData.record.AAAA) {
-      commit[domainData.domain].push(
-        AAAA(domainData.subdomain, domainData.record.AAAA[aaaa], proxyState) // https://stackexchange.github.io/dnscontrol/js#AAAA
+      commit[domainName].push(
+        AAAA(domainData.subdomain, domainData.record.AAAA[aaaa], proxyState)
       )
     }
   }
 
   if (domainData.record.NS) {
     for (var ns in domainData.record.NS) {
-      commit[domainData.domain].push(
-        NS(domainData.subdomain, domainData.record.NS[ns]) // https://stackexchange.github.io/dnscontrol/js#NS
+      commit[domainName].push(
+        NS(domainData.subdomain, domainData.record.NS[ns])
       )
+    }
+  }
+
+  if (domainData.nested) {
+    for (var k in domainData.nested) {
+      var nestedData = domainData.nested[k]
+      var nestedSubdomain = [nestedData.subdomain, domainData.subdomain].join('.')
+      var nestedProxyState = proxy.on // enabled by default
+
+      if (nestedData.proxy === false) {
+        nestedProxyState = proxy.off
+      }
+
+      if (nestedData.record.TXT) {
+        for (var nestedTxt in nestedData.record.TXT) {
+          commit[domainName].push(
+            TXT(nestedSubdomain, nestedData.record.TXT[nestedTxt])
+          )
+        }
+      }
+
+      if (nestedData.record.CNAME) {
+        var nestedCname = nestedData.record.CNAME.replace(/\.+$/, '') + '.'
+
+        commit[domainName].push(
+          CNAME(nestedSubdomain, nestedCname, nestedProxyState)
+        )
+      }
+
+      if (nestedData.record.A) {
+        for (var nestedA in nestedData.record.A) {
+          commit[domainName].push(
+            A(nestedSubdomain, IP(nestedData.record.A[nestedA]), nestedProxyState)
+          )
+        }
+      }
+
+      if (nestedData.record.AAAA) {
+        for (var nestedAAA in nestedData.record.AAAA) {
+          commit[domainName].push(
+            AAAA(nestedSubdomain, nestedData.record.AAAA[nestedAAA], nestedProxyState)
+          )
+        }
+      }
+
+      if (nestedData.record.NS) {
+        for (var nestedNS in nestedData.record.NS) {
+          commit[domainName].push(
+            NS(nestedSubdomain, nestedData.record.NS[nestedNS])
+          )
+        }
+      }
     }
   }
 }

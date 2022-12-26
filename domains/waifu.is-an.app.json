@@ -1,13 +1,13 @@
 {
-	"$schema": "../schemas/domain.schema.json",
-	"description": "A Web API For Anime Waifus",
-	"domain": "is-an.app",
-	"subdomain": "waifu",
-	"owner": {
-		"email": "orekidev@gmail.com"
-	},
-	"record": {
-		"CNAME": "border.hop.io."
-	},
-	"proxy": true
+  "$schema": "../schemas/domain.schema.json",
+  "description": "A Web API For Anime Waifus",
+  "domain": "is-an.app",
+  "subdomain": "waifu",
+  "owner": {
+    "email": "orekidev@gmail.com"
+  },
+  "record": {
+    "CNAME": "border.hop.io."
+  },
+  "proxy": true
 }

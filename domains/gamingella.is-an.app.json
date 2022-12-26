@@ -1,14 +1,14 @@
 {
-    "$schema": "../schemas/domain.schema.json",
-    "description": "A Gaming Website",
-    "domain": "is-an.app",
-    "subdomain": "gamingella",
-    "owner": {
-      "repo": "https://github.com/rhysjamesmason/gamingella",
-      "email": "domains@rhysjames.tk"
-    },
-    "record": {
-      "CNAME": "rhysjamesmason.github.io."
-    },
-    "proxy": false
-  }
+  "$schema": "../schemas/domain.schema.json",
+  "description": "A Gaming Website",
+  "domain": "is-an.app",
+  "subdomain": "gamingella",
+  "owner": {
+    "repo": "https://github.com/rhysjamesmason/gamingella",
+    "email": "domains@rhysjames.tk"
+  },
+  "record": {
+    "CNAME": "rhysjamesmason.github.io."
+  },
+  "proxy": false
+}

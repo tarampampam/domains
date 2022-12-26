@@ -79,7 +79,7 @@ First of all, I want to answer one important question - "Why are you giving out 
     "email": "<your-public@email.address>"
   },
   "record": {
-    "CNAME": "<cname-domain-with-a-dot-at-the-end>",
+    "CNAME": "<cname-domain>",
     "TXT": ["list", "of", "required", "txt", "records"],
     "A": ["list", "of", "IPv4", "addresses", "like", "a", "127.0.0.1"],
     "AAAA": ["list", "of", "IPv6", "addresses", "like", "a", "::1"],
