@@ -8,7 +8,7 @@
     "email": "avalynndev@gmail.com"
   },
   "record": {
-    "TXT": [ "vc-domain-verify=yt2mp3.is-an.app,9a50e70e577e932e63c6" ]
+    "CNAME": "cname.vercel-dns.com."
   },
   "proxy": false
 }
