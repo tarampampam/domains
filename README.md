@@ -102,8 +102,8 @@ First of all, I want to answer one important question - "Why are you giving out 
 
 > 🔍 A few similar services can be [found here](https://free-for.dev/#/?id=domain).
 
-[badge-tests]:https://img.shields.io/github/workflow/status/tarampampam/free-domains/tests?label=tests&logo=github&style=for-the-badge
-[badge-deploy]:https://img.shields.io/github/workflow/status/tarampampam/free-domains/deploy?label=deploy&logo=github&style=for-the-badge
+[badge-tests]:https://img.shields.io/github/actions/workflow/status/tarampampam/free-domains/tests.yml?branch=master&label=tests&logo=github&style=for-the-badge
+[badge-deploy]:https://img.shields.io/github/actions/workflow/status/tarampampam/free-domains/deploy.yml?branch=master&label=deploy&logo=github&style=for-the-badge
 
 [actions]:https://github.com/tarampampam/free-domains/actions
 [deploy]:https://github.com/tarampampam/free-domains/actions/workflows/deploy.yml
