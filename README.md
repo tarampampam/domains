@@ -79,7 +79,7 @@ First of all, I want to answer one important question - "Why are you giving out 
     "email": "<your-public@email.address>"
   },
   "record": {
-    "CNAME": "<cname-domain-with-a-dot-at-the-end>",
+    "CNAME": "<cname-domain>",
     "TXT": ["list", "of", "required", "txt", "records"],
     "A": ["list", "of", "IPv4", "addresses", "like", "a", "127.0.0.1"],
     "AAAA": ["list", "of", "IPv6", "addresses", "like", "a", "::1"],
@@ -88,6 +88,8 @@ First of all, I want to answer one important question - "Why are you giving out 
   "proxy": false // disable the CF proxy, proxying is always enabled by default
 }
 ```
+
+> For the more details about the format, please, check the [JSON schema](./schemas/domain.schema.json)
 
 4. Your pull request will be reviewed and merged. Please, don't ignore the PR checklist. If you ignore this repository rules, your PR will be ignored too. _Make sure to keep an eye on it in case we need you to make any changes!_
 5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(usually, it takes 5..15 minutes)_
@@ -102,8 +104,8 @@ First of all, I want to answer one important question - "Why are you giving out 
 
 > 🔍 A few similar services can be [found here](https://free-for.dev/#/?id=domain).
 
-[badge-tests]:https://img.shields.io/github/workflow/status/tarampampam/free-domains/tests?label=tests&logo=github&style=for-the-badge
-[badge-deploy]:https://img.shields.io/github/workflow/status/tarampampam/free-domains/deploy?label=deploy&logo=github&style=for-the-badge
+[badge-tests]:https://img.shields.io/github/actions/workflow/status/tarampampam/free-domains/tests.yml?branch=master&label=tests&logo=github&style=for-the-badge
+[badge-deploy]:https://img.shields.io/github/actions/workflow/status/tarampampam/free-domains/deploy.yml?branch=master&label=deploy&logo=github&style=for-the-badge
 
 [actions]:https://github.com/tarampampam/free-domains/actions
 [deploy]:https://github.com/tarampampam/free-domains/actions/workflows/deploy.yml

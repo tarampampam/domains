@@ -8,7 +8,7 @@
     "email": "val.hk@proton.me"
   },
   "record": {
-    "CNAME": "valhk.github.io."
+    "CNAME": "valhk.github.io"
   },
   "proxy": false
 }

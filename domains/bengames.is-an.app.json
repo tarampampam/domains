@@ -8,7 +8,6 @@
     "email": "bengames25@gmail.com"
   },
   "record": {
-    "CNAME": "bengames.000webhostapp.com."
-  },
-  "proxy": false
+    "CNAME": "bengames.000webhostapp.com"
+  }
 }

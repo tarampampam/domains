@@ -1,16 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "$schema": {
-      "type": "string",
-      "description": "Path to the schema file"
-    },
-    "description": {
-      "type": "string",
-      "minLength": 4
-    },
+  "definitions": {
     "domain": {
       "type": "string",
       "enum": [
@@ -34,7 +24,6 @@
           "admins",
           "answer",
           "answers",
-          "api",
           "apis",
           "app",
           "apps",
@@ -301,20 +290,6 @@
         ]
       }
     },
-    "owner": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "repo": {
-          "type": "string",
-          "description": "Path to the github repository"
-        },
-        "email": {
-          "type": "string",
-          "description": "Email address"
-        }
-      }
-    },
     "record": {
       "type": "object",
       "additionalProperties": false,
@@ -344,7 +319,7 @@
         "CNAME": {
           "type": "string",
           "minLength": 1,
-          "pattern": "^[a-z0-9_./-]*\\.$"
+          "pattern": "^[a-z0-9_./-]{2,}$"
         },
         "NS": {
           "type": "array",
@@ -381,10 +356,65 @@
           ]
         }
       ]
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Path to the schema file"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 4
+    },
+    "domain": {
+      "$ref": "#/definitions/domain"
+    },
+    "subdomain": {
+      "$ref": "#/definitions/subdomain"
+    },
+    "owner": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "repo": {
+          "type": "string",
+          "description": "Path to the github repository"
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address"
+        }
+      }
+    },
+    "record": {
+      "$ref": "#/definitions/record"
     },
     "proxy": {
       "type": "boolean",
       "default": true
+    },
+    "nested": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "subdomain": {
+            "$ref": "#/definitions/subdomain"
+          },
+          "record": {
+            "$ref": "#/definitions/record"
+          },
+          "proxy": {
+            "type": "boolean",
+            "default": true
+          }
+        },
+        "required": [
+          "subdomain",
+          "record"
+        ]
+      }
     }
   },
   "required": [
@@ -393,5 +423,7 @@
     "domain",
     "subdomain",
     "record"
-  ]
+  ],
+  "type": "object",
+  "additionalProperties": false
 }
