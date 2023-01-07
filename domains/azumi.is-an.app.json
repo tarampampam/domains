@@ -1,0 +1,25 @@
+{
+
+  "$schema": "../schemas/domain.schema.json",
+
+  "description": "Personal site for personal projects",
+
+  "domain": "is-an.app",
+
+  "subdomain": "azumi",
+
+  "owner": {
+
+    "repo": "https://github.com/Azumi-Development/Azumi-Development.github.io/",
+
+    "discord": "AquaQuokka#3560"
+
+  },
+
+  "record": {
+
+    "CNAME": "azumi-development.github.io"
+
+  }
+
+}
