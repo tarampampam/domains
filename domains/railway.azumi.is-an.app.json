@@ -4,9 +4,9 @@
 
   "description": "Personal site for personal projects",
 
-  "domain": "azumi.is-an.app",
+  "domain": "is-an.app",
 
-  "subdomain": "railway",
+  "subdomain": "railway.azumi",
 
   "owner": {
 
