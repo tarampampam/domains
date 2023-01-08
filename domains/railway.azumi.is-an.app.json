@@ -1,0 +1,25 @@
+{
+
+  "$schema": "../schemas/domain.schema.json",
+
+  "description": "Personal site for personal projects",
+
+  "domain": "azumi.is-an.app",
+
+  "subdomain": "railway",
+
+  "owner": {
+
+    "repo": "https://github.com/Azumi-Development/Azumi-Development.github.io/",
+
+    "email": "AquaQuokka@outlook.com"
+
+  },
+
+  "record": {
+
+    "CNAME": "azumi.up.railway.app"
+
+  }
+
+}
