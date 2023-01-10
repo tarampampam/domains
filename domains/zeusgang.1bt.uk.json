@@ -1,6 +1,6 @@
 {
   "$schema": "../schemas/domain.schema.json",
-  "description": "Browser extension Random User-Agent homepage",
+  "description": "A simple website that shows member information and leaderboards for the minecraft team",
   "domain": "1bt.uk",
   "subdomain": "zeusgang",
   "owner": {
