@@ -43,4 +43,4 @@ jobs:
             - ✅ All CI checks are passed
 
             <!--ID:CHECKLIST-->
-          comment_includes: <!--ID:CHECKLIST-->
+          comment_tag: <!--ID:CHECKLIST-->
