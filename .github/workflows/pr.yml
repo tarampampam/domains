@@ -41,6 +41,4 @@ jobs:
             - 📋 You have clearly described a reason for the domain registration (and what you plan to use it for) in the PR description
             - 🔗 The website is reachable and a link to it is in the PR description
             - ✅ All CI checks are passed
-
-            <!--ID:CHECKLIST-->
-          comment_tag: <!--ID:CHECKLIST-->
+          comment_tag: ID:CHECKLIST
