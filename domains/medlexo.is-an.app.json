@@ -7,7 +7,6 @@
     "email": "medlexopm@gmail.com"
   },
   "record": {
-    "NS": ["ns1.epizy.com.", "ns2.epizy.com."],
     "A" : ["185.27.134.137"]
   }
 }
