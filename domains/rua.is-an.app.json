@@ -1,6 +1,6 @@
 {
   "$schema": "../schemas/domain.schema.json",
-  "description": "Browser extension Random User-Agent homepage TEST 123",
+  "description": "Browser extension Random User-Agent homepage TEST 123 321",
   "domain": "is-an.app",
   "subdomain": "rua",
   "owner": {
