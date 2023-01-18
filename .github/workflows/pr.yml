@@ -2,7 +2,7 @@ name: pr
 
 on:
   pull_request_target:
-    types: [opened, synchronize, reopened, ready_for_review, review_requested] # https://bit.ly/3FEj9D4
+    types: [opened, synchronize, reopened, ready_for_review, review_requested, edited] # https://bit.ly/3FEj9D4
     branches: [master, main]
 
 jobs:
@@ -41,4 +41,6 @@ jobs:
             - 📋 You have clearly described a reason for the domain registration (and what you plan to use it for) in the PR description
             - 🔗 The website is reachable and a link to it is in the PR description
             - ✅ All CI checks are passed
+
+            After that, feel free to mark this PR as **ready for review**.
           comment_tag: ID:CHECKLIST
