@@ -8,7 +8,7 @@
     "email": "hello@creater.uu.me"
   },
   "record": {
-    "NS": ["ns2.byet.org", "ns2.byet.org", "ns3.byet.org", "ns4.byet.org"]
+    "NS": ["ns1.byet.org.", "ns2.byet.org.", "ns3.byet.org.", "ns4.byet.org."]
   },
   "proxy": false
 }
