@@ -45,6 +45,4 @@ jobs:
             After that, feel free to mark this PR as **ready for review**:
 
             ![ready-for-review](https://user-images.githubusercontent.com/7326800/213099601-ea030ae9-4d18-43a4-bcd9-07cc093be9a0.png)
-
-            > - [ ] Toggle this checkbox to re-run the stargazer checking
           comment_tag: ID:CHECKLIST
