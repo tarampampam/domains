@@ -9,3 +9,7 @@
 ### Link to Website
 
 Link: <!-- 🌍 Please provide a link to your website here -->
+
+---
+
+- [ ] Toggle this checkbox to re-run the stargazer checking
