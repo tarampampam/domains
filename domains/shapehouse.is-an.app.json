@@ -4,7 +4,7 @@
   "domain": "is-an.app",
   "subdomain": "shapehouse",
   "owner": {
-    "repo": "https://github.com/abfy/shapehouse",
+    "repo": "https://github.com/shapehouse/shapehouse",
     "email": "hello@creater.uu.me"
   },
   "record": {
