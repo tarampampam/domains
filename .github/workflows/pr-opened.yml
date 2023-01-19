@@ -14,4 +14,4 @@ jobs:
 
       - name: Mark as draft
         env: {GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'}
-        run: gh pr ready --undo
+        run: gh pr ready ${{ github.event.pull_request.number }} --undo
