@@ -9,5 +9,24 @@
   },
   "record": {
     "CNAME": "shredmod.github.io"
-  }
+  },
+  "nested": [
+    {
+      "subdomain": "packager",
+      "record": {
+        "CNAME": "shredmod.github.io/packager/"
+      }
+    },
+    {
+      "subdomain": "extensions",
+      "record": {
+        "CNAME": "shredmod.github.io/extensions/"
+      }
+    },
+    {
+      "subdomain": "docs",
+      "record": {
+        "CNAME": "shredmod.github.io/extensions/"
+      }
+    }
 }
