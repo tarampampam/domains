@@ -1,13 +1,13 @@
 {
-  "$schema":"../schemas/domain.schema.json",
-  "description":"Epic scratch modifation with tons of cool features",
-  "domain":"is-an.app",
-  "subdomain":"*.shredmod",
-  "owner":{
-    "repo":"https://github.com/ShredMod/shredmod.github.io",
-    "email":"themadpunter10@gmail.com"
+  "$schema": "../schemas/domain.schema.json",
+  "description": "Epic scratch modifation with tons of cool features",
+  "domain": "is-an.app",
+  "subdomain": "*.shredmod",
+  "owner": {
+    "repo": "https://github.com/ShredMod/shredmod.github.io",
+    "email": "themadpunter10@gmail.com"
   },
-  "record":{
-    "CNAME":"shredmod.github.io"
+  "record": {
+    "CNAME": "shredmod.github.io"
   }
 }
