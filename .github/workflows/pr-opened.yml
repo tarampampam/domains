@@ -4,14 +4,10 @@ on:
   pull_request:
     types: [opened]
 
-permissions:
-  contents: read
-  issues: write
-  pull-requests: write
-
 jobs:
   mark-as-draft:
     name: Mark as draft
+    permissions: write-all
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     steps:
