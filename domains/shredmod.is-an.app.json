@@ -24,7 +24,7 @@
       }
     },
     {
-      "subdomain": "docs",
+      "subdomain": "documentations",
       "record": {
         "CNAME": "shredmod.github.io"
       }
