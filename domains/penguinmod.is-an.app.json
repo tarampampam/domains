@@ -1,13 +1,13 @@
 {
-  "$schema":"../schemas/domain.schema.json",
-  "description":"Epic scratch modifation with tons of cool features",
-  "domain":"is-an.app",
-  "subdomain":"penguinmod",
-  "owner":{
-    "repo":"https://github.com/PenguinMod/penguinmod.github.io",
-    "email":"freshpenguin112@gmail.com"
+  "$schema": "../schemas/domain.schema.json",
+  "description": "Epic scratch modifation with tons of cool features",
+  "domain": "is-an.app",
+  "subdomain": "penguinmod",
+  "owner": {
+    "repo": "https://github.com/PenguinMod/penguinmod.github.io",
+    "email": "freshpenguin112@gmail.com"
   },
-  "record":{
-    "CNAME":"penguinmod.github.io"
+  "record": {
+    "CNAME": "penguinmod.github.io"
   }
 }

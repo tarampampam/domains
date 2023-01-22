@@ -9,6 +9,6 @@
   },
   "record": {
     "CNAME": "it-personality.github.io"
- }, 
-"proxy": false 
+  },
+  "proxy": false
 }
