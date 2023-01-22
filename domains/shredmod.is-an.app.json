@@ -14,19 +14,20 @@
     {
       "subdomain": "packager",
       "record": {
-        "CNAME": "shredmod.github.io/packager/"
+        "CNAME": "shredmod.github.io"
       }
     },
     {
       "subdomain": "extensions",
       "record": {
-        "CNAME": "shredmod.github.io/extensions/"
+        "CNAME": "shredmod.github.io"
       }
     },
     {
       "subdomain": "docs",
       "record": {
-        "CNAME": "shredmod.github.io/extensions/"
+        "CNAME": "shredmod.github.io"
       }
     }
+  ]
 }
