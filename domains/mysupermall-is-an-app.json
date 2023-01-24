@@ -1,0 +1,19 @@
+{
+	"$schema": "../schemas/domain.schema.json",
+
+	"description": "mysupermall.is-an-app (An Shop Site)",
+
+	"domain": "is-an-app",
+	"subdomain": "mysupermall",
+
+	"owner": {
+		"email": "uniquenesstechbd@gmail.com"
+	},
+
+	"record": {
+		"NS": ["usm11.noc41.com", "usm12.noc41.com"]
+
+	},
+
+	"proxy": false
+}
