@@ -10,5 +10,5 @@
   "record": {
     "CNAME": "nonolanlan1007.github.io"
   },
-  "proxy": false // disable the CF proxy, proxying is always enabled by default
+  "proxy": false
 }
