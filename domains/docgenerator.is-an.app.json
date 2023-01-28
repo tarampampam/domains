@@ -9,5 +9,6 @@
 	},
 	"record": {
 		"CNAME": "66ce8734-9640-4e32-bc9e-e4605132599e.id.repl.co"
-	}
+	},
+	"proxy": false
 }
