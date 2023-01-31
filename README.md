@@ -8,6 +8,7 @@
 
 [![Tests Status][badge-tests]][actions]
 [![Deploy Status][badge-deploy]][deploy]
+![badge-domains]
 </div>
 
 Free subdomains for personal sites, open-source projects, and more. Here is a list of supported domain names:
@@ -106,6 +107,7 @@ First of all, I want to answer one important question - "Why are you giving out 
 
 [badge-tests]:https://img.shields.io/github/actions/workflow/status/tarampampam/free-domains/tests.yml?branch=master&label=tests&logo=github&style=for-the-badge
 [badge-deploy]:https://img.shields.io/github/actions/workflow/status/tarampampam/free-domains/deploy.yml?branch=master&label=deploy&logo=github&style=for-the-badge
+[badge-domains]:https://img.shields.io/github/directory-file-count/tarampampam/free-domains/domains?label=domains&style=for-the-badge&type=file
 
 [actions]:https://github.com/tarampampam/free-domains/actions
 [deploy]:https://github.com/tarampampam/free-domains/actions/workflows/deploy.yml
