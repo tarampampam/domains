@@ -1,0 +1,15 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "Register my domain",
+  "domain": "is-an.app",
+  "subdomain": "chirag-adhvaryu",
+  "owner": {
+    "repo": "https://github.com/Chirag-Adhvaryu/chirag-adhvaryu.github.io",
+    "email": "chirag.adhvaryu@acquaintsofttech.com"
+  },
+  "record": {
+    "CNAME": "chirag-adhvaryu"
+  },
+  "proxy": false
+}
+
