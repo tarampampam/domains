@@ -1,14 +1,14 @@
 {
-	"$schema": "../schemas/domain.schema.json",
-	"description": "KrazyKleb's website",
-	"domain": "is-an.app",
-	"subdomain": "KrazyKleb",
-	"owner": {
-		"repo": "https://github.com/KrazyKleb999/portfoilio",
-		"email": "KrazyKleb#7830(Discord, Don't want to show email)"
-	},
-	"record": {
-		"CNAME": "portfoilio-production-2a0f.up.railway.app"
-	},
-	"proxy": false
+  "$schema": "../schemas/domain.schema.json",
+  "description": "KrazyKleb's website",
+  "domain": "is-an.app",
+  "subdomain": "KrazyKleb",
+  "owner": {
+    "repo": "https://github.com/KrazyKleb999/portfoilio",
+    "email": "KrazyKleb#7830(Discord, Don't want to show email)"
+  },
+  "record": {
+    "CNAME": "portfoilio-production-2a0f.up.railway.app"
+  },
+  "proxy": false
 }
