@@ -1,6 +1,6 @@
 {
   "$schema": "../schemas/domain.schema.json",
-  "description": "Register my domain",
+  "description": "I want to publish my developer portfolio on this domain",
   "domain": "is-an.app",
   "subdomain": "chirag-adhvaryu",
   "owner": {
@@ -8,7 +8,7 @@
     "email": "chirag.adhvaryu@acquaintsofttech.com"
   },
   "record": {
-    "CNAME": "chirag-adhvaryu"
+    "CNAME": "chiragadhvaryu"
   },
   "proxy": false
 }
