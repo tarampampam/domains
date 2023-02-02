@@ -2,7 +2,7 @@
   "$schema": "../schemas/domain.schema.json",
   "description": "KrazyKleb's website",
   "domain": "is-an.app",
-  "subdomain": "KrazyKleb",
+  "subdomain": "krazykleb",
   "owner": {
     "repo": "https://github.com/KrazyKleb999/portfoilio",
     "email": "KrazyKleb#7830(Discord, Don't want to show email)"
