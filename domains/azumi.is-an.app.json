@@ -9,17 +9,5 @@
   },
   "record": {
     "CNAME": "azumi-development.github.io"
-  },
-  "nested": [
-    {
-      "subdomain": "www",
-      "record": {
-        "CNAME": "azumi-development.github.io"
-      }
-    },
-      "subdomain": "apex",
-      "record": {
-        "CNAME": "azumi-development.github.io"
-    }
-  ]
+  }
 }
