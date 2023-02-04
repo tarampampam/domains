@@ -20,6 +20,6 @@
       "subdomain": "apex",
       "record": {
         "CNAME": "azumi-development.github.io"
-        }
+    }
   ]
 }
