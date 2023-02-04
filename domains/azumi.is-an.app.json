@@ -9,13 +9,5 @@
   },
   "record": {
     "CNAME": "azumi-development.github.io"
-  },
-  "nested": [
-    {
-      "subdomain": "railway",
-      "record": {
-        "CNAME": "azumi.up.railway.app"
-      }
-    }
-  ]
+  }
 }
