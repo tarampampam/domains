@@ -12,10 +12,15 @@
   },
   "nested": [
     {
-      "subdomain": "docs",
+      "subdomain": "www",
       "record": {
-        "CNAME": "azumi-development.github.io/docs"
+        "CNAME": "azumi-development.github.io"
       }
-    }
+    },
+      "subdomain": "apex",
+      "record": {
+        "CNAME": "azumi-development.github.io"
+        }
+     }
   ]
 }
