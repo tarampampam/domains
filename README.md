@@ -85,10 +85,17 @@ First of all, I want to answer one important question - "Why are you giving out 
     "A": ["list", "of", "IPv4", "addresses", "like", "a", "127.0.0.1"],
     "AAAA": ["list", "of", "IPv6", "addresses", "like", "a", "::1"],
     "NS": ["list", "of", "nameservers"]
-  },
-  "proxy": false // disable the CF proxy, proxying is always enabled by default
+  }
 }
 ```
+
+> If you wish to disable Cloudflare proxy (with is enabled by default), **append** the following property into **your `json` file**:
+>
+> ```json
+> {
+>   "proxy": false
+> }
+> ```
 
 > For the more details about the format, please, check the [JSON schema](./schemas/domain.schema.json)
 
