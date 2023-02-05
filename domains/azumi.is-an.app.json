@@ -16,6 +16,12 @@
       "record": {
         "CNAME": "azumidocs.github.io"
       }
+    },
+    {
+      "subdomain": "blog",
+      "record": {
+        "CNAME": "hashnode.network"
+      }
     }
   ]
 }
