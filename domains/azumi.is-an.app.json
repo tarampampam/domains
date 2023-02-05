@@ -22,7 +22,8 @@
       "subdomain": "blog",
       "record": {
         "CNAME": "hashnode.network"
-      }
+      },
+      "proxy": false
     }
   ]
 }
