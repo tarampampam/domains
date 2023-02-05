@@ -21,8 +21,7 @@
     "CNAME": "azumi-development.github.io"
 
   }
-
-  },
+  }
   "nested": [
     {
       "subdomain": "docs",
