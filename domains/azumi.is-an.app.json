@@ -12,7 +12,7 @@
   },
   "nested": [
     {
-      "subdomain": "docs.azumi",
+      "subdomain": "docs",
       "record": {
         "CNAME": "azumidocs.github.io"
       }
