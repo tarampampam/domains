@@ -15,7 +15,8 @@
       "subdomain": "docs",
       "record": {
         "CNAME": "azumidocs.github.io"
-      }
+      },
+      "proxy": false
     },
     {
       "subdomain": "blog",
