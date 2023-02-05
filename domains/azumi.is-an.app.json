@@ -16,14 +16,14 @@
       "record": {
         "CNAME": "azumidocs.github.io"
       },
-      "proxy": false,
+      "proxy": false
     },
     {
       "subdomain": "blog",
       "record": {
         "CNAME": "hashnode.network"
       },
-      "proxy": false,
+      "proxy": false
     }
   ]
 }
