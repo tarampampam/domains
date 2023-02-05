@@ -3,7 +3,6 @@
   "description": "Personal site for personal projects",
   "domain": "is-an.app",
   "subdomain": "azumi",
-  "proxy": false,
   "owner": {
     "repo": "https://github.com/Azumi-Development/Azumi-Development.github.io/",
     "email": "AquaQuokka@outlook.com"
