@@ -9,5 +9,13 @@
   },
   "record": {
     "CNAME": "azumi-development.github.io"
-  }
+  },
+  "nested": [
+    {
+      "subdomain": "docs.azumi",
+      "record": {
+        "CNAME": "azumidocs.github.io"
+      }
+    }
+  ]
 }
