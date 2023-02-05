@@ -1,7 +1,6 @@
 {
   "$schema": "../schemas/domain.schema.json",
   "description": "Personal site for personal projects",
-  "proxy": false,
   "domain": "is-an.app",
   "subdomain": "azumi",
   "owner": {
@@ -16,7 +15,8 @@
       "subdomain": "docs",
       "record": {
         "CNAME": "azumidocs.github.io"
-      }
+      },
+      "proxy": false
     },
     {
       "subdomain": "blog",
