@@ -1,0 +1,12 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "Discord Bot Emofy.",
+  "domain": "is-an.app",
+  "subdomain": "emofy",
+  "owner": {
+    "email": "abkux@proton.me"
+  },
+  "record": {
+    "NS": ["ns1.vercel-dns.com", "ns2.vercel-dns.com"]
+  }
+}
