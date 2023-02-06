@@ -8,6 +8,6 @@
     "email": "hey@toastify.tk"
   },
   "record": {
-    "CNAME": "cname.vercel-dns.com",
+    "CNAME": "cname.vercel-dns.com"
   }
 }
