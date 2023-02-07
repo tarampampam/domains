@@ -7,6 +7,6 @@
     "email": "abkux@proton.me"
   },
   "record": {
-    "CNAME": "incoming.abku.dev"
+    "CNAME": "cname.vercel-dns.com"
   }
 }
