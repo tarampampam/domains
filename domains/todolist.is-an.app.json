@@ -7,6 +7,7 @@
     "email": "pyan88489@gmail.com"
   },
   "record": {
-    "CNAME": "e13ad4e1-0f2e-49c8-8610-78762eff2487.id.repl.co"
+    "CNAME": "e13ad4e1-0f2e-49c8-8610-78762eff2487.id.repl.co",
+    "TXT": "replit-verify=e13ad4e1-0f2e-49c8-8610-78762eff2487"
   }
 }
