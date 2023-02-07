@@ -7,6 +7,6 @@
     "email": "abkux@proton.me"
   },
   "record": {
-    "A": ["76.76.21.21"]
+    "CNAME": "incoming.abku.dev"
   }
 }
