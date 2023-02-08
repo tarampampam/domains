@@ -104,6 +104,9 @@ takes 5..15 minutes)_
 > Domains, used for illegal purposes will be removed and permanently banned. Please, provide a clear description of
 > your resource in the PR.
 
+⚠ To validate the project domain, registered on the Vercel platform - please, provide full information about the
+required verification records in the PR description or separate issue. I need to add them to the DNS zone manually.
+
 ## If you don't know...
 
 - What is GitHub pages and how to set up a custom domain, read the [docs here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
