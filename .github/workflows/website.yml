@@ -1,4 +1,4 @@
-name: website
+name: 🚀 Deploy the website
 
 on:
   push:
@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   update:
-    name: Publish website
+    name: 🖼 Deploy the website
     permissions:
       pages: write
       id-token: write

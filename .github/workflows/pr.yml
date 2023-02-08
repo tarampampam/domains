@@ -1,4 +1,4 @@
-name: pr
+name: 🎠 Pull Request
 
 on:
   pull_request_target:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   check-user-star:
-    name: Check the user's star
+    name: 🌟 Check the user's star
     runs-on: ubuntu-latest
     steps:
       - {uses: gacts/is-stargazer@v1, with: {username: '${{ github.event.pull_request.user.login }}'}, id: check-star}
@@ -18,7 +18,7 @@ jobs:
           script: core.setFailed('⭐ Please, star this repository!')
 
   checklist:
-    name: Message a checklist to the PR
+    name: 🗒 Message a checklist to the PR
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -36,7 +36,7 @@ jobs:
             Please, make sure that your PR passes the following checklist:
 
             - ⭐ You have starred this repository
-            - 🗒 The file with your subdomain has a `.json` extension, doesn't contain comments (`// ...`), and is well formatted (indent size - 2 spaces)
+            - 🗒 The file with your subdomain has a `.js` extension and is well formatted (indent size - 2 spaces)
             - 👤 There is sufficient information in the `owner` field
             - 📋 You have clearly described a reason for the domain registration (and what you plan to use it for) in the PR description
             - 🔗 The website is reachable and a link to it is in the PR description

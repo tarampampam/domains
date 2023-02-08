@@ -1,4 +1,4 @@
-name: deploy
+name: 🚀 Deploy the DNS records
 
 on:
   workflow_dispatch: {}
@@ -12,7 +12,7 @@ concurrency:
 
 jobs:
   check:
-    name: Deploy DNS changes
+    name: 🌐 Deploy the DNS records
     runs-on: ubuntu-latest
     environment: production
     steps:

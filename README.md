@@ -18,7 +18,8 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
 | ⚡ [`*.is-an.app`](https://is-an.app/) | ![cf][badge-cf] ![dnssec][badge-dnssec] ![ssl][badge-ssl] |
 |             ⚡ `*.1bt.uk`              |          ![cf][badge-cf] ![dnssec][badge-dnssec]          |
 
-> Wildcards (like `*.foo.is-an.app`) are supported too, but the reason for their registration should be very clear and described in detail.
+> Wildcards (like `*.foo.is-an.app`) are supported too, but the reason for their registration should be very
+> clear and described in detail.
 
 [badge-cf]:https://shields.io/badge/%20-cloudflare-blue?logo=cloudflare&style=plastic?cacheSeconds=3600
 [badge-dnssec]:https://shields.io/badge/%20-DNSSEC-blue?logo=moleculer&logoColor=white&style=plastic?cacheSeconds=3600
@@ -26,7 +27,9 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
 
 ## Why?
 
-First of all, I want to answer one important question - "Why are you giving out domains for free?". Because sometimes I need domains for my pet projects, and instead of buying new domains every time, I decided to buy one for everyone, and use subdomains. And why not share them with the community?
+First of all, I want to answer one important question - "Why are you giving out domains for free?". Because sometimes
+I need domains for my pet projects, and instead of buying new domains every time, I decided to buy one for everyone,
+and use subdomains. And why not share them with the community?
 
 ## Domains settings
 
@@ -65,45 +68,41 @@ First of all, I want to answer one important question - "Why are you giving out 
 
 # How to get one?
 
-1. Star and [fork](https://github.com/tarampampam/free-domains/fork) this repository (follow [this guide](https://github.com/firstcontributions/first-contributions) if you don't  know how to make a contributions)
-2. Add a new file called `<your-subdomain-name>.<root-domain>.json` in the `./domains` folder to register `<your-subdomain-name>` subdomain
-3. Edit it (below is just an **example**, provide a **valid** JSON file with your needs, the format is very strict; format you can [check here](https://jsonlint.com/)):
+1. Star and [fork](https://github.com/tarampampam/free-domains/fork) this repository (follow
+[this guide](https://github.com/firstcontributions/first-contributions) if you don't  know how to make a contributions)
+2. Add a new file called `<your-subdomain-name>.<root-domain>.js` (in lower case) in the `./domains` folder to
+register `<your-subdomain-name>` subdomain
+3. Edit it (below is just an **example**, provide a **valid** JS file with your needs):
 
-```json
-{
-  "$schema": "../schemas/domain.schema.json",
-  "description": "<describe your project in this field>",
-  "domain": "<is-an.app or 1bt.uk - select one>",
-  "subdomain": "<your subdomain name>",
-  "owner": {
-    "repo": "<https://URL/to/the/repository/with/subdomain/content/sources>",
-    "email": "<your-public@email.address>"
+```javascript
+addSubDomain({
+  description: '...', // describe your project in this field
+  domain: '1bt.uk', // aka "root-domain". select between '1bt.uk' and 'is-an.app'
+  subdomain: 'foobar', // desired subdomain name
+  owner: {
+    repo: '<https://URL/to/the/repository/with/subdomain/content/sources>',
+    email: '<your-public@email.address>',
   },
-  "record": {
-    "CNAME": "<cname-domain>",
-    "TXT": ["list", "of", "required", "txt", "records"],
-    "A": ["list", "of", "IPv4", "addresses", "like", "a", "127.0.0.1"],
-    "AAAA": ["list", "of", "IPv6", "addresses", "like", "a", "::1"],
-    "NS": ["list", "of", "nameservers"]
-  }
-}
+  record: {
+    CNAME: '<cname-domain>', // e.g.: <your-github-account>.github.io
+    TXT: ['list', 'of', 'required', 'txt', 'records'],
+    A: ['list', 'of', 'IPv4', 'addresses', 'like', 'a', '127.0.0.1'],
+    AAAA: ['list', 'of', 'IPv6', 'addresses', 'like', 'a', '::1'],
+    NS: ['list', 'of', 'nameservers'],
+  },
+  //proxy: false, // disable Cloudflare proxy (with is enabled by default). In this case, your origin server
+                  // should provide valid a SSL certificate and protection CF will be disabled
+})
 ```
 
-> If you wish to disable Cloudflare proxy (with is enabled by default), **append** the following property into **your `json` file**:
->
-> ```json
-> {
->   "proxy": false
-> }
-> ```
-
-> For the more details about the format, please, check the [JSON schema](./schemas/domain.schema.json)
-
-4. Your pull request will be reviewed and merged. Please, don't ignore the PR checklist. If you ignore this repository rules, your PR will be ignored too. _Make sure to keep an eye on it in case we need you to make any changes!_
-5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(usually, it takes 5..15 minutes)_
+4. Your pull request will be reviewed and merged. Please, don't ignore the PR checklist. If you ignore this
+repository rules, your PR will be ignored too. _Make sure to keep an eye on it in case we need you to make any changes!_
+5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(usually, it
+takes 5..15 minutes)_
 6. Enjoy your new domain!
 
-> Domains, used for illegal purposes will be removed and permanently banned. Please, provide a clear description of your resource in the PR.
+> Domains, used for illegal purposes will be removed and permanently banned. Please, provide a clear description of
+> your resource in the PR.
 
 ## If you don't know...
 
