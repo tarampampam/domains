@@ -59,7 +59,7 @@ var validate = new function () {
    * @returns {boolean}
    */
   this.aaaa = function (aaaa) {
-    return typeof aaaa === 'string' && /^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]+|::(ffff(:0{1,4})?:)?((25[0-5]|(2[0-4]|1?[0-9])?[0-9])\.){3}(25[0-5]|(2[0-4]|1?[0-9])?[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1?[0-9])?[0-9])\.){3}(25[0-5]|(2[0-4]|1?[0-9])?[0-9]))$/.test(aaaa)
+    return typeof aaaa === 'string' && /^([0-9a-fA-F]{0,4}:){1,7}[0-9a-fA-F]{0,4}$/.test(aaaa)
   }
 
   /**
@@ -269,7 +269,7 @@ subDomains.forEach(function (subDomain) {
 
   if (subDomain.record.A) {
     subDomain.record.A.forEach(function (a) {
-      commit[subDomain.domain].push(A(subDomain.subdomain, a, proxy))
+      commit[subDomain.domain].push(A(subDomain.subdomain, IP(a), proxy))
     })
   }
 
@@ -296,35 +296,38 @@ subDomains.forEach(function (subDomain) {
 
       if (nested.record.TXT) {
         nested.record.TXT.forEach(function (txt) {
-          commit[subDomain.subdomain].push(TXT(nestedSubdomain, txt))
+          commit[subDomain.domain].push(TXT(nestedSubdomain, txt))
         })
       }
 
       if (nested.record.A) {
         nested.record.A.forEach(function (a) {
-          commit[subDomain.subdomain].push(A(nestedSubdomain, a, nestedProxy))
+          commit[subDomain.domain].push(A(nestedSubdomain, IP(a), nestedProxy))
         })
       }
 
       if (nested.record.AAAA) {
         nested.record.AAAA.forEach(function (aaaa) {
-          commit[subDomain.subdomain].push(AAAA(nestedSubdomain, aaaa, nestedProxy))
+          commit[subDomain.domain].push(AAAA(nestedSubdomain, aaaa, nestedProxy))
         })
       }
 
       if (nested.record.CNAME) {
-        commit[subDomain.subdomain].push(CNAME(nestedSubdomain, nested.record.CNAME, nestedProxy))
+        commit[subDomain.domain].push(CNAME(nestedSubdomain, nested.record.CNAME, nestedProxy))
       }
 
       if (nested.record.NS) {
         nested.record.NS.forEach(function (ns) {
-          commit[subDomain.subdomain].push(NS(nestedSubdomain, ns))
+          commit[subDomain.domain].push(NS(nestedSubdomain, ns))
         })
       }
     })
   }
 })
 
+var reg = NewRegistrar('none')
+var provider = DnsProvider(NewDnsProvider('cloudflare'))
+
 for (var domainName in commit) {
-  D(domainName, NewRegistrar('none'), DnsProvider(NewDnsProvider('cloudflare')), commit[domainName])
+  D(domainName, reg, provider, commit[domainName])
 }

@@ -1,0 +1,13 @@
+addSubDomain({
+  description: 'My personal site and other stuff',
+  domain: 'is-an.app',
+  subdomain: 'qwertx',
+  owner: {
+    repo: 'https://github.com/NotQWertz/NotQWertz.github.io',
+    email: 'zuweyrh752@gmail.com',
+  },
+  record: {
+    CNAME: 'notqwertz.github.io',
+  },
+  proxy: false,
+})

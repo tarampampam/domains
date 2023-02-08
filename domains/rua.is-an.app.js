@@ -7,5 +7,5 @@ addSubDomain({
   },
   record: {
     CNAME: 'tarampampam.github.io',
-  }
+  },
 })
