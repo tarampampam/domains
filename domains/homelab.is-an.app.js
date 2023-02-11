@@ -1,7 +1,7 @@
 addSubDomain({
   description: 'Backend routing for all my homelab projects',
   domain: 'is-an.app',
-  subdomain: '*.homelab',
+  subdomain: 'homelab',
   owner: {
     repo: 'https://github.com/nileshsolanki?tab=repositories',
     email: 'nileshsolanki456@gmail.com',
