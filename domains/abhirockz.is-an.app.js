@@ -1,5 +1,3 @@
-
-
 addSubDomain({
   description: 'For my college project', // describe your project in this field
   domain: 'is-an.app', // aka "root-domain". select between '1bt.uk' and 'is-an.app'
