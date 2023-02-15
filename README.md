@@ -82,7 +82,7 @@ addSubDomain({
   domain: '1bt.uk', // aka "root-domain". select between '1bt.uk' and 'is-an.app'
   subdomain: 'foobar', // desired subdomain name
   owner: {
-    repo: '<https://URL/to/the/repository/with/subdomain/content/sources>',
+    repo: '<https://URL/to/the/repository/with/your/project/sources/if/it/is/public>',
     email: '<your-public@email.address>',
   },
   record: {
