@@ -7,10 +7,8 @@ addSubDomain({
     email: 'mosynikrooy@gmail.com',
   },
   record: {
-    NS: [
-      'ns1.digitalocean.com.',
-      'ns2.digitalocean.com.',
-      'ns3.digitalocean.com.',
+    A: [
+      '157.230.44.144',
     ],
   },
   proxy: false,
