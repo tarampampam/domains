@@ -185,6 +185,14 @@ function addSubDomain(data) {
     }
 
     if (Array.isArray(data.record.NS)) {
+      if (
+        typeof data.record.A !== 'undefined' ||
+        typeof data.record.AAAA !== 'undefined' ||
+        typeof data.record.CNAME !== 'undefined'
+      ) {
+        throw new Error('NS records cannot be used with A, AAAA or CNAME records')
+      }
+
       if (!data.record.NS.every(validate.ns)) {
         throw new Error('NS records must be an array of valid domain names')
       } else {
