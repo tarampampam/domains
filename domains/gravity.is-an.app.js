@@ -7,7 +7,6 @@ addSubDomain({
     },
     record: {
       CNAME: 'cname.vercel-dns.com', // e.g.: <your-github-account>.github.io
-      NS: ['ns1.vercel-dns.com', 'ns2.vercel-dns.com'],
     },
    
   })
