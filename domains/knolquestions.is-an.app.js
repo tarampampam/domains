@@ -5,7 +5,7 @@ addSubDomain({
   domain: 'is-an.app', // aka "root-domain". select between '1bt.uk' and 'is-an.app'
   subdomain: 'knolquestions', // desired subdomain name
   owner: {
-    repo: '<https://URL/to/the/repository/with/your/project/sources/if/it/is/public>',
+    repo: 'https://github.com/Kelvin-Lamptey/KNOLquestions/',
     email: 'kelvinlamptey77@gmail.com,
   },
   record: {
