@@ -7,7 +7,7 @@ addSubDomain({
     email: 'mrgamers11223@gmail.com',
   },
   record: {
-    CNAME: 'http://konseling-alhikmah-7c-kel-radith.000webhostapp.com/'
+    CNAME: 'konseling-alhikmah-7c-kel-radith.000webhostapp.com'
   },
   proxy: false,
 })
