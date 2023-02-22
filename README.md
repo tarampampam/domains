@@ -127,7 +127,7 @@ required verification records in the PR description or separate issue. I need to
 - What is GitHub pages and how to set up a custom domain, read the [docs here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
 - The difference between `A`, `CNAME`, and other record types, the article on Wikipedia [is here](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
 
-> 🔍 A few similar services can be [found here](https://free-for.dev/#/?id=domain).
+> 🔍 A few similar services can be [found here](https://free-for.life/#/?id=domains).
 
 [badge-tests]:https://img.shields.io/github/actions/workflow/status/tarampampam/free-domains/tests.yml?branch=master&label=tests&logo=github&style=for-the-badge
 [badge-deploy]:https://img.shields.io/github/actions/workflow/status/tarampampam/free-domains/deploy.yml?branch=master&label=deploy&logo=github&style=for-the-badge
