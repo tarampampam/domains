@@ -1,7 +1,7 @@
 addSubDomain({
   description: 'Php school thing',
   domain: 'is-an.app',
-  subdomain: 'Bk7C',
+  subdomain: 'bk7c',
   owner: {
     repo: 'https://github.com/EpikCoder/free-domains/',
     email: 'mrgamers11223@gmail.com',
