@@ -31,6 +31,9 @@ First of all, I want to answer one important question - "Why are you giving out 
 I need domains for my pet projects, and instead of buying new domains every time, I decided to buy one for everyone,
 and use subdomains. And why not share them with the community?
 
+> Please, register domains only for **existing projects** - empty or misconfigured sites will be removed after some 
+> time (I do it manually, with notifications before the cleaning).
+
 ## Domains settings
 
 |                                   Option                                   |       `*.is-an.app`       |        `*.1bt.uk`         |
