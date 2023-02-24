@@ -19,7 +19,7 @@ Free subdomains for personal sites, open-source projects, and more. Here is a li
 |             ⚡ `*.1bt.uk`              |          ![cf][badge-cf] ![dnssec][badge-dnssec]          |
 
 > Wildcards (like `*.foo.is-an.app`) are supported too, but the reason for their registration should be very
-> clear and described in detail.
+> clear and described in detail. Open an issue before the wildcard subdomain request with a clear description.
 
 [badge-cf]:https://shields.io/badge/%20-cloudflare-blue?logo=cloudflare&style=plastic?cacheSeconds=3600
 [badge-dnssec]:https://shields.io/badge/%20-DNSSEC-blue?logo=moleculer&logoColor=white&style=plastic?cacheSeconds=3600
