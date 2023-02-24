@@ -36,7 +36,7 @@ jobs:
             Please, make sure that your PR passes the following checklist:
 
             - ⭐ You have starred this repository
-            - 🗒 The file with your subdomain has a `.js` extension and is well formatted (indent size - 2 spaces)
+            - 🗒 The file with your subdomain has a `.js` extension, well-formatted (indent size - 2 spaces) and **all comments** are removed
             - 👤 There is sufficient information in the `owner` field
             - 📋 You have clearly described a reason for the domain registration (and what you plan to use it for) in the PR description
             - 🔗 The website is reachable and a link to it is in the PR description
