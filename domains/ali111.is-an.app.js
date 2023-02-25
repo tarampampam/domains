@@ -11,9 +11,9 @@ addSubDomain({
   record: {
     CNAME: 'ElonMusk49.github.io', // e.g.: <your-github-account>.github.io
   //TXT: ['list', 'of', 'required', 'txt', 'records'],
-    A: ['list', 'of', 'IPv4', 'addresses', 'like', 'a', '127.0.0.1'],
-    AAAA: ['list', 'of', 'IPv6', 'addresses', 'like', 'a', '::1'],
-    NS: ['list', 'of', 'nameservers'],
+  //A: ['list', 'of', 'IPv4', 'addresses', 'like', 'a', '127.0.0.1'],
+  //AAAA: ['list', 'of', 'IPv6', 'addresses', 'like', 'a', '::1'],
+  //NS: ['list', 'of', 'nameservers'],
   },
   //proxy: false, // disable Cloudflare proxy (with is enabled by default). In this case, your origin server
                   // should provide valid a SSL certificate and protection CF will be disabled
