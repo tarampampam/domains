@@ -10,7 +10,7 @@ addSubDomain({
   },
   record: {
     CNAME: 'ElonMusk49.github.io', // e.g.: <your-github-account>.github.io
-    // TXT: ['list', 'of', 'required', 'txt', 'records'],
+  //TXT: ['list', 'of', 'required', 'txt', 'records'],
     A: ['list', 'of', 'IPv4', 'addresses', 'like', 'a', '127.0.0.1'],
     AAAA: ['list', 'of', 'IPv6', 'addresses', 'like', 'a', '::1'],
     NS: ['list', 'of', 'nameservers'],
