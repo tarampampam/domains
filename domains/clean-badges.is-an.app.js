@@ -7,7 +7,7 @@ addSubDomain({
     email: 'swargaraj66@gmail.com',
   },
   record: {
-    CNAME: 'practicing-wrists.000webhostapp.com',
+    CNAME: 'clean-badges-web-lpm4.vercel.app',
   },
   proxy: false,
 })
