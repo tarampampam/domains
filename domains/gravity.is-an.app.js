@@ -1,13 +1,12 @@
 addSubDomain({
-    description: 'A website to share file using a server', 
+    description: 'A website to generate code screenshots', 
     domain: 'is-an.app', 
-    subdomain: 'anyshare', 
+    subdomain: 'gravity', 
     owner: {
-      email: 'varshithvh@gmail.com',
+      email: 'hariskumar.eth@gmail.com',
     },
     record: {
-      CNAME: 'cname.vercel-dns.com',
-      TXT: 'vc-domain-verify=anyshare.is-an.app,aa2d72333b67a4dd5f79'
+      CNAME: 'cname.vercel-dns.com', 
     },
    
   })
