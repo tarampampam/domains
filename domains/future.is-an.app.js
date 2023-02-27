@@ -6,7 +6,7 @@ addSubDomain({
     email: 'future.software.company@gmail.com',
   },
   record: {
-    CNAME: 'The-Future-Software-Company.github.io',
+    CNAME: 'the-future-software-company.github.io',
   },
   proxy: false,
 })
