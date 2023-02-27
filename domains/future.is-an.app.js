@@ -3,10 +3,10 @@ addSubDomain({
   domain: 'is-an.app',
   subdomain: 'future',
   owner: {
-    email: 'gslicocuk8080@yaani.com',
+    email: 'future.software.company@gmail.com',
   },
   record: {
-    CNAME: 'github.com/The-Future-Software-Company',
+    CNAME: 'github.com/the-future-software-company',
   },
   proxy: false,
 })
