@@ -1,7 +1,7 @@
 addSubDomain({
-  description: 'A free hosting website with a lot of features and good uptime', // describe your project in this field
-  domain: 'is-an.app', // aka "root-domain". select between '1bt.uk' and 'is-an.app'
-  subdomain: 'freewh', // desired subdomain name
+  description: 'A free hosting website with a lot of features and good uptime',
+  domain: 'is-an.app',
+  subdomain: 'freewh',
   owner: {
     email: 'contact@onion.is-a.dev',
   },
