@@ -3,7 +3,7 @@ addSubDomain({
   domain: 'is-an.app',
   subdomain: 'viral-gadhiya',
   owner: {
-    repo: 'https://github.com/viral-gadhiya/viral-gadhiya.github.io,
+    repo: 'https://github.com/viral-gadhiya/viral-gadhiya.github.io',
     email: 'viral.gadhiya@acquaintsofttech.com',
   },
   record: {
