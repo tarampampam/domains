@@ -3,7 +3,7 @@ addSubDomain({
   domain: 'is-an.app',
   subdomain: 'yash-poojara',
   owner: {
-    repo: 'https://github.com/yash-poojara/yash-poojara.github.io,
+    repo: 'https://github.com/yash-poojara/yash-poojara.github.io',
     email: 'yash.poojara@acquaintsofttech.com',
   },
   record: {
