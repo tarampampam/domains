@@ -1,5 +1,5 @@
 addSubDomain({
-  description: 'Pinger is a bot where people can host their projects and it have also dashboard tahts why we need your support,
+  description: 'Pinger is a bot where people can host their projects and it have also dashboard tahts why we need your support',
   domain: 'is-an.app',
   subdomain: 'pinger',
   owner: {
