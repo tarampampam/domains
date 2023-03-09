@@ -7,7 +7,7 @@ addSubDomain({
     email: 'contactus@dimisaio.x10.mx',
   },
   record: {
-    NS: ['ns0.1984.is', 'ns1.1984hosting.com', 'ns1.1984.is', 'ns2.1984hosting.com', 'ns2.1984.is'],
+    NS: ['ns1.desec.io', 'ns2.desec.org'],
   },
   proxy: true,
 })
