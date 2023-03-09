@@ -9,21 +9,8 @@ addSubDomain({
     email: 'contactus@dimisaio.x10.mx',
   },
   record: {
-    NS: ['ns1.desec.io', 'ns2.desec.org'],
+    NS: ['ns0.1984.is', 'ns1.1984hosting.com', 'ns1.1984.is', 'ns2.1984hosting.com', 'ns2.1984.is'],
   },
   proxy: true, // disable Cloudflare proxy (with is enabled by default). In this case, your origin server
                   // should provide valid a SSL certificate and protection CF will be disabled
-nested: [{ // in addition, you may define the required nested subdomains
-subdomain: '*',
-record: {
-CNAME: 'gd.1bt.uk',
-//},
-  //   proxy: false,
-  // }, {
-  //   subdomain: 'bar',
-  //   record: {
-  //     A: ['...'],
-  //   },
-  //   proxy: true,
-}}]
 })
