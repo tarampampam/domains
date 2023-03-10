@@ -8,6 +8,7 @@ addSubDomain({
   },
   record: {
     CNAME: 'yopremium21.github.io',
+    TXT: '@','google-site-verification=QH--pVtsk2JAvSjvUMS-NjzTf1SoITuAcHsOd7E36JI'
   },
   proxy: false,
 })
