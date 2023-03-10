@@ -7,7 +7,15 @@ addSubDomain({
     email: 'contactus@dimisaio.x10.mx',
   },
   record: {
-    NS: ['ns1.1bt.uk', 'gd.uk.ms'],
+    A: ['141.145.198.45'],
+    NS: ['ns1.gd.1bt.uk'],
   },
-  proxy: true,
+  proxy: false,
+    nested: [{
+  subdomain: 'ns1',
+  record: {
+ A: ['141.145.198.45'],
+  },
+  proxy: false,
+  }]
 })
