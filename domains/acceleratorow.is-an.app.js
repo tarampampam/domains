@@ -6,6 +6,6 @@ addSubDomain({
     email: 'tranhieu95@yahoo.com',
   },
   record: {
-    A: ['140.83.81.12:54321'],
+    A: ['140.83.81.12'],
   },
 })
