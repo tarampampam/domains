@@ -1,0 +1,12 @@
+addSubDomain({
+  description: 'Domain for my Github Page project & my Golang project',
+  domain: '1bt.uk',
+  subdomain: 'biz',
+  owner: {
+    repo: '<https://github.com/suntech-group/mjolnir>',
+    email: '<jc.neseer@outlook.com>',
+  },
+  record: {
+    NS: ['NS1.AFRAID.ORG', 'NS2.AFRAID.ORG', 'NS3.AFRAID.ORG', 'NS4.AFRAID.ORG'],
+  },
+})
