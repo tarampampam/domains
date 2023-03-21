@@ -1,9 +1,9 @@
 addSubDomain({
   description: 'www subdomain',
-  domain: 'is-an.app',
+  domain: 'phucanh.dev',
   subdomain: 'www',
   owner: {
-    repo: 'https://github.com/tarampampam/free-domains',
+    repo: 'https://phucanhdev.github.io/',
   },
   record: {
     A: [
