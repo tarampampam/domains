@@ -7,6 +7,6 @@ addSubDomain({
     email: 'sx-91@outlook.com',
   },
   record: {
-    TXT: ['vc-domain-verify=codedit.is-an.app,77e30d5e3dcd7f52ea58'],
+    CNAME: 'vc-domain-verify=codedit.is-an.app,77e30d5e3dcd7f52ea58',
   },
 });
