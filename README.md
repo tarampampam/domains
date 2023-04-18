@@ -71,8 +71,8 @@ and use subdomains. And why not share them with the community?
 
 # How to get one?
 
-1. Star and [fork](https://github.com/tarampampam/free-domains/fork) this repository (follow
-[this guide](https://github.com/firstcontributions/first-contributions) if you don't  know how to make a contributions)
+1. Make a PR to this repository (follow [this guide](https://github.com/firstcontributions/first-contributions) 
+if you don't know how to make a contributions)
 2. Add a new file called `<your-subdomain-name>.<root-domain>.js` (in lower case) in the `./domains` folder to
 register `<your-subdomain-name>` subdomain
 3. Edit it (below is just an **example**, provide a **valid** JS file with your needs):
