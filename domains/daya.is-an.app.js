@@ -6,7 +6,30 @@ addSubDomain({
         email: 'alphaevelio@gmail.com',
     },
     record: {
-        NS: ['ns1.afraid.org', 'ns2.afraid.org', 'ns3.afraid.org', 'ns4.afraid.org'],
+        CNAME: "daya-web.onrender.com",
     },
-    proxy: false
+    proxy: false,
+    nested: [
+        {
+            subdomain: "cdn",
+            record: {
+                A: ["76.223.55.44"]
+            },
+            proxy: false
+        },
+        {
+            subdomain: "docs",
+            record: {
+                CNAME: "74f89ed3f2-hosting.gitbook.io"
+            },
+            proxy: false
+        },
+        {
+            subdomain: "_deta",
+            record: {
+                TXT: ["deta-verification=FyNGhQWyjbuGPU9W5Hix9bppVQAJgGAe"]
+            },
+            proxy: false
+        }
+    ]
 })
