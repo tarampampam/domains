@@ -4,7 +4,7 @@ addSubDomain({
   subdomain: 'sanjay-makasana',
   owner: {
     repo: 'https://github.com/sanjay-makasana/sanjay-makasana.github.io',
-    email: 'jagruti.metaliya@truestaz.com',
+    email: 'sanjay.makasana@truestaz.com',
   },
   record: {
     CNAME: 'sanjay-makasana.github.io',
