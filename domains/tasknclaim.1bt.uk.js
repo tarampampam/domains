@@ -6,7 +6,7 @@ addSubDomain({
     email: "dynamicxau@gmail.com"
   },
   record: {
-    TXT: ["vc-domain-verify=tasknclaim.1bt.uk,d25a46a807fc4aeddbbd"]
+    CNAME: 'cname.vercel-dns.com'
   },
   proxy: false,
 })
