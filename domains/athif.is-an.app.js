@@ -3,7 +3,7 @@ addSubDomain({
   domain: 'is-an.app', 
   subdomain: 'athif', 
   owner: {
-    repo: 'https://github.com/Athif5025/MyProfile',
+    repo: '',
     email: 'profriski10@gmail.com',
   },
   record: {
