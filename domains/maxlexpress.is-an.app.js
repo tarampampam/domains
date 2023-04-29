@@ -7,7 +7,6 @@ addSubDomain({
   },
   record: {
     TXT: ['_github-pages-challenge-VienDeveloper.maxlexpress', 'a623dce85b2666dea6bc7b339529b6'],
-    CNAME: 'viendeveloper.github.io'
   },
   proxy: false,
 })
