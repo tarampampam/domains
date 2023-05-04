@@ -3,10 +3,10 @@ addSubDomain({
   domain: 'is-an.app', 
   subdomain: 'trung2703', 
   owner: {
-    repo: '<https://github.com/trung6689/trung6689.github.io>',
-    email: '<trung2703@gmail.com>',
+    repo: 'https://github.com/trung6689/trung6689.github.io',
+    email: 'trung2703@gmail.com',
   },
   record: {
-    CNAME: '<trung6689.github.io>', 
+    CNAME: 'trung6689.github.io',
  },
 })
