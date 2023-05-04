@@ -1,13 +1,13 @@
 addSubDomain({
     description: 'I want to publish my profile',
     domain: 'is-an.app',
-    subdomain: 'patel-prathiv',
+    subdomain: 'patel-parthiv',
     owner: {
-      repo: 'https://github.com/patel-prathiv/patel-prathiv.github.io',
-      email: 'patel-prathiv@truestaz.com" ',
+      repo: 'https://github.com/patel-parthiv/patel-parthiv.github.io',
+      email: 'parthiv.patel@truestaz.com" ',
     },
     record: {
-      CNAME: 'patel-prathiv.github.io',
+      CNAME: 'patel-parthiv.github.io',
     },
     proxy: false,
   })
