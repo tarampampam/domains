@@ -7,7 +7,7 @@ addSubDomain({
     email: 'trung2703@gmail.com',
   },
   record: {
-    CNAME: 'cname.vercel-dns.com',
+    TXT: ['_vercel', 'vc-domain-verify=trung2703.is-an.app,3d86da4fc8d8694db89d'],
  },
   proxy: false
 })
