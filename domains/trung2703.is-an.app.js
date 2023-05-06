@@ -3,10 +3,11 @@ addSubDomain({
   domain: 'is-an.app', 
   subdomain: 'trung2703', 
   owner: {
-    repo: 'https://github.com/trung6689/trung6689.github.io',
+    repo: 'https://github.com/trung6689/onedrive-vercel-index',
     email: 'trung2703@gmail.com',
   },
   record: {
-    CNAME: 'trung6689.github.io',
+    CNAME: 'cname.vercel-dns.com',
  },
+  proxy: false
 })
