@@ -122,8 +122,9 @@ takes 5..15 minutes)_
 > Domains, used for illegal purposes will be removed and permanently banned. Please, provide a clear description of
 > your resource in the PR.
 
-⚠ To validate the project domain, registered on the Vercel platform - please, provide full information about the
+⚠ To validate the project domain, registered on the **Vercel** platform - please, provide full information about the
 required verification records in the PR description or separate issue. I need to add them to the DNS zone manually.
+A correct PR example can be found [here](https://github.com/tarampampam/free-domains/pull/300).
 
 ## If you don't know...
 
