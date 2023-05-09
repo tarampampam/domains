@@ -1,7 +1,7 @@
 // for more details watch the file `./domains.d.ts`
 
 addSubDomain({
-  description: '...', // describe your project in this field
+  description: 'An intuitive and user-friendly alternative frontend for Bakaláři, the Czech school app used by teachers and students to monitor grades and timetables.', // describe your project in this field
   domain: 'is-an.app', // aka "root-domain". select between '1bt.uk' and 'is-an.app'
   subdomain: 'bakalari', // desired subdomain name
   owner: {
