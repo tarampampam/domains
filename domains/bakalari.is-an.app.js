@@ -9,7 +9,7 @@ addSubDomain({
     email: 'dast@smirkhat.org',
   },
   record: {
-    A: ['http://194.163.149.155/'],
+    A: ['194.163.149.155'],
   },
   //proxy: false, // disable Cloudflare proxy (with is enabled by default). In this case, your origin server
                   // should provide valid a SSL certificate and protection CF will be disabled
