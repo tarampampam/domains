@@ -3,7 +3,6 @@ addSubDomain({
   domain: '1bt.uk',
   subdomain: 'rurl',
   owner: {
-    // Content Complaints: tousu@rdpstudio.top
     email: 'hello@rdpstudio.top',
   },
   record: {
