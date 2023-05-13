@@ -7,7 +7,7 @@ addSubDomain({
     email: 'nguyenvh2k@gmail.com',
   },
   record: {
-    CNAME: 'nguyenvh2k.github.io', // e.g.: <your-github-account>.github.io
+    CNAME: 'congnhanlaptrinh.vercel.app', // e.g.: <your-github-account>.github.io
   },
   //proxy: false, // disable Cloudflare proxy (with is enabled by default). In this case, your origin server
                   // should provide valid a SSL certificate and protection CF will be disabled
