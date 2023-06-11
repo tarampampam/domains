@@ -5,7 +5,7 @@ addSubDomain({
     domain: 'is-an.app', // aka "root-domain". select between '1bt.uk' and 'is-an.app'
     subdomain: 'myassignment', // desired subdomain name
     owner: {
-      repo: '',
+      repo: 'NONE',
       email: 'david.mellor@telus.net',
     },
     record: {
