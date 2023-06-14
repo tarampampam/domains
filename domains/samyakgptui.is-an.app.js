@@ -9,5 +9,6 @@ addSubDomain({
   record: {
       CNAME: 'cname.vercel-dns.com'
   }
+})
 
 })
