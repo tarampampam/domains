@@ -7,4 +7,5 @@ addSubDomain({
   },
   record: {
     CNAME: 'spotube.netlify.app'
+  }
 })
