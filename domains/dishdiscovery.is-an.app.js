@@ -4,7 +4,7 @@ addSubDomain({
   subdomain: 'dishdiscovery',
   owner: {
     email: 'notnotrachit@gmail.com',
-    twitter: 'notnotrachit'
+    twitter: '@notnotrachit'
   },
   record: {
     CNAME: 'cname.vercel-dns.com'
