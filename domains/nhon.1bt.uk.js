@@ -9,7 +9,7 @@ addSubDomain({
     email: '<pavkhxv504@saasalternatives.net>',
   },
   record: {
-    CNAME: '<gv-wpssgrxmn6yncc.dv.googlehosted.com>',
+    TXT: ['google-site-verification=NHMOTz-jbYfnJ8qZg0mn3Ul1Zko7Ekos_hYCIPVOyQQ'],
   },
   proxy: false,
 })
