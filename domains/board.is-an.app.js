@@ -7,7 +7,6 @@ addSubDomain({
     email: 'rahulmarban@gmail.com',
   },
   record: {
-    TXT: ['vc-domain-verify=board.is-an.app,f8602906e1897b3123cf'],
     CNAME: 'cname.vercel-dns.com'
   },
 })
