@@ -1,6 +1,6 @@
 addSubDomain({
   description: 'A personal website for me and my friends.',
-  domain: 'is-an.app',
+  domain: '1bt.uk',
   subdomain: 'newstorm',
   owner: {
     email: 'NewStormCN@protonmail.com',
