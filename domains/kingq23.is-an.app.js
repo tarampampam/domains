@@ -1,9 +1,7 @@
-// for more details watch the file `./domains.d.ts`
-
 addSubDomain({
-  description: '...', // describe your project in this field
-  domain: 'is-an.app', // aka "root-domain". select between '1bt.uk' and 'is-an.app'
-  subdomain: 'kingq23', // desired subdomain name
+  description: 'a domain for a mastodon instance', 
+  domain: 'is-an.app', 
+  subdomain: 'kingq23', 
   owner: {
     
     email: 'qadams2008@gmail.com',
