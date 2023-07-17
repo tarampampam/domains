@@ -4,6 +4,7 @@ addSubDomain({
   subdomain: 'devtweet',
   owner: {
     email: 'oyepriyansh@hotmail.com',
+    repo: 'https://github.com/oyepriyansh/DevTweet',
   },
   record: {
     CNAME: 'cname.vercel-dns.com'
