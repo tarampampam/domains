@@ -11,6 +11,8 @@
 ![badge-domains]
 </div>
 
+> **Due to numerous nonsensical domain requests since the creation of this repository, I have temporarily restricted interactions to previously contributed developers.**
+
 Free subdomains for personal sites, open-source projects, and more. Here is a list of supported domain names:
 
 |              Domain name              |                         Features                          |
