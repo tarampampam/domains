@@ -9,8 +9,7 @@ addSubDomain({
     email: 'themadpunter10@gmail.com',
   },
   record: {
-    CNAME: '89c4cc2d-c519-4490-99d0-2ebc45f3ce20.id.repl.co', // e.g.: <your-github-account>.github.io
-    TXT: ['replit-verify=89c4cc2d-c519-4490-99d0-2ebc45f3ce20']
+    CNAME: '89c4cc2d-c519-4490-99d0-2ebc45f3ce20.id.repl.co'
   },
   //proxy: false, // disable Cloudflare proxy (with is enabled by default). In this case, your origin server
                   // should provide valid a SSL certificate and protection CF will be disabled
