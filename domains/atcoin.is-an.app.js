@@ -1,7 +1,7 @@
 // for more details watch the file `./domains.d.ts`
 
 addSubDomain({
-  description: '...', // describe your project in this field
+  description: 'A digital currency project with zero fees and ease of use', // describe your project in this field
   domain: 'is-an.app', // aka "root-domain". select between '1bt.uk' and 'is-an.app'
   subdomain: 'atcoin', // desired subdomain name
   owner: {
