@@ -1,5 +1,5 @@
 addSubDomain({
-  description: 'A website that converts Youtube videos into mp3 files. Made using Next.js',
+  description: 'A website that converts Youtube videos into mp3/mp4 files',
   domain: 'is-an.app',
   subdomain: 'yt2mp3',
   owner: {
