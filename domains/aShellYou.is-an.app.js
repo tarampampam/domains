@@ -2,7 +2,7 @@ addSubDomain({
   description: 'A beautiful local ADB shell specifically designed for Android devices powered by Shizuku.
 ',
   domain: 'is-an.app',
-  subdomain: 'aShell-You',
+  subdomain: 'aShellYou',
   owner: {
     repo: 'https://github.com/Krishna-G-OP/aShellYou-Website',
     email: 's.banti1357@gmail.com',
