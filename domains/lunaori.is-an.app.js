@@ -7,7 +7,7 @@ addSubDomain({
     email: "orekidev@gmail.com",
   },
   record: {
-    CNAME: "cname.vercel-dns.com",
+    CNAME: "app-220.pages.dev",
   },
   proxy: false,
 });
