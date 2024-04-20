@@ -6,7 +6,7 @@ addSubDomain({
     email: 'polyanthi_pumicing@aleeas.com', // if needed discord contact, https://discord.gg/ux4Dkerw2h or 'polyanthi' on discord
   },
   record: {
-    NS: ['ns1.desec.io', 'ns2.desec.org'],
+    NS: ['ns1.hostry.com', 'ns2.hostry.com', 'ns3.hostry.com', 'ns4.hostry.com'],
   },
   proxy: false,
 })
