@@ -3,8 +3,7 @@ addSubDomain({
   domain: 'is-an.app',
   subdomain: 'polyvpn',
   owner: {
-    discord: 'polyanthi',
-    email: 'polyanthi_pumicing@aleeas.com',
+    email: 'polyanthi_pumicing@aleeas.com', // if needed discord contact, https://discord.gg/ux4Dkerw2h
   },
   record: {
     NS: ['ns1.desec.io', 'ns2.desec.org'],
