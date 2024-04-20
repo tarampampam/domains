@@ -7,8 +7,7 @@ addSubDomain({
     email: 'polyanthi_pumicing@aleeas.com',
   },
   record: {
-    NS: 'ns1.desec.io',
-    NS: 'ns2.desec.org'
+    NS: ['ns1.desec.io', 'ns2.desec.org'],
   },
   proxy: false,
 })
