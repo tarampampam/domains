@@ -13,7 +13,7 @@ jobs:
       - {uses: gacts/is-stargazer@v1, with: {username: '${{ github.event.pull_request.user.login }}'}, id: check-star}
 
       - if: steps.check-star.outputs.is-stargazer != 'true'
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: core.setFailed('⭐ Please, star this repository!')
 
