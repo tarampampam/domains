@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+# docs: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+
+name: 🧪 Tests
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [master, main]
+    tags-ignore: ['**']
+    paths-ignore: ['**.md', 'sites/**']
+  pull_request:
+    paths-ignore: ['**.md', 'sites/**']
+
+concurrency:
+  group: ${{ github.ref }}-tests
+  cancel-in-progress: true
+
+jobs:
+  gitleaks:
+    name: 🔐 GitLeaks
+    runs-on: ubuntu-latest
+    steps:
+      - {uses: actions/checkout@v4, with: {fetch-depth: 0}}
+      - uses: gacts/gitleaks@v1
+
+  check:
+    name: 🌐 DNSControl check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gacts/install-dnscontrol@v1
+      - run: dnscontrol check

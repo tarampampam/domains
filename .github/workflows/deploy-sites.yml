@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+# docs: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+
+name: 🚀 Deploy the website
+
+on:
+  push:
+    branches: [master, main]
+    paths: [sites/**, .github/workflows/deploy-sites.yml]
+
+concurrency:
+  group: ${{ github.ref }}-website
+  cancel-in-progress: true
+
+jobs:
+  is-an-app:
+    name: 🖼 Deploy the is-an.app website
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: sites/is-an.app}
+      - {uses: actions/deploy-pages@v4, id: deployment}
