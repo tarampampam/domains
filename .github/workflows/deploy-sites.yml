@@ -27,4 +27,4 @@ jobs:
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with: {path: sites/is-an.app}
-      - {uses: actions/deploy-pages@v4, id: deployment}
+      - {uses: actions/deploy-pages@v5, id: deployment}
