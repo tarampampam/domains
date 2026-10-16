@@ -2,9 +2,6 @@
 /.idea
 /.vscode
 
-## Auth
-/creds.json
-
 ## Temp dirs & trash
 /temp
 /tmp

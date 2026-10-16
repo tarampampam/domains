@@ -8,9 +8,9 @@ on:
   push:
     branches: [master, main]
     tags-ignore: ['**']
-    paths-ignore: ['**.md', 'sites/**']
+    paths-ignore: ['**.md']
   pull_request:
-    paths-ignore: ['**.md', 'sites/**']
+    paths-ignore: ['**.md']
 
 concurrency:
   group: ${{ github.ref }}-tests
@@ -24,11 +24,3 @@ jobs:
       - uses: actions/checkout@v7
         with: {fetch-depth: 0}
       - uses: gacts/gitleaks@v1
-
-  check:
-    name: 🌐 DNSControl check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - uses: gacts/install-dnscontrol@v1
-      - run: dnscontrol check
